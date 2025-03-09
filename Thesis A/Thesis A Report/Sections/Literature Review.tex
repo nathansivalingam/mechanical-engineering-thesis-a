@@ -44,12 +44,12 @@ A photovoltaic module is made up of multiple photovoltaic cells, commonly known 
 
 \noindent As shown in Figure \ref{fig:photovoltaic_cell_diagram}, a silicon photovoltaic cell is composed of two different layers of silicon: an n-type silicon layer, which has additional electrons, and a p-type silicon layer, which has extra spaces for the electrons, called holes.\par
 
-ADD IN THE STUFF ABOUT DOPING (CAN BE FOUND IN BARRY'S SECOND PARAGRAPH IN 2.1.)
+\noindent ADD IN THE STUFF ABOUT DOPING (CAN BE FOUND IN BARRY'S SECOND PARAGRAPH IN 2.1.)
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{Figures/photovoltaic_cell_diagram.jpg}
-    \caption{Photovoltaic Cell Structure Diagram}
+    \caption{Photovoltaic Cell Structure Diagram \cite{Gupta2020SolarVehicle}}
     \label{fig:photovoltaic_cell_diagram}
 \end{figure}
 \FloatBarrier
@@ -58,9 +58,21 @@ ADD IN THE STUFF ABOUT DOPING (CAN BE FOUND IN BARRY'S SECOND PARAGRAPH IN 2.1.)
 
 \subsection{Limitations of Photovoltaic Modules}
 \subsubsection{What are the limitations of Photovoltaic Modules?}
-- A significant limitation of photovoltaic modules are their energy conversion efficiency.\par
-\noindent- A typical photovoltaic module can convert 6-20 percent of the incoming solar energy into electrical energy. \cite{Dubey2013TemperatureReview}\par
-- The remaining 80-94 percent of solar energy
+- A significant limitation of photovoltaic modules is their energy conversion efficiency.\par
+\noindent- A standard photovoltaic module typically converts 6 to 20 percent of incoming solar radiation into electrical energy.\par
+\noindent - The remaining 80 to 94 percent of incident solar radiation is primarily converted into heat, raising the temperature of the photovoltaic module and subsequently reducing its energy conversion efficiency. \cite{Dubey2013TemperatureReview}\par
+\noindent - A 2010 study led by H.G. Teo from the National University of Singapore further refined the conversion efficiency range of photovoltaic modules, determining that peak efficiency fell between 8 and 14 percent. \cite{Teo2012AnModules}\par
+\noindent - Teo's results also revealed a linear relationship between the electrical efficiency of the photovoltaic module and its temperature., shown below in Figure \ref{fig:electrical_efficiency_vs_temperature_pv_module}.\par
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/electrical_efficiency_vs_temperature_pv_module.png}
+    \caption{Electrical efficiency as a function of PV temperature \cite{TED-Ed2025HowKomp}}
+    \label{fig:electrical_efficiency_vs_temperature_pv_module}
+\end{figure}
+\FloatBarrier
+
+\noindent FURTHER EXPLAIN TEO's RESEARCH BEFORE GOING INTO THE NEXT SECTION
 
 \subsubsection{Why do these limitations exist?}
 What is the scientific reason behind why high module temperature correlates to poor electrical efficiency?\par
@@ -70,69 +82,87 @@ By finding ways to cool the module temperature.\par
 
 \pagebreak
 \subsection{Heat Transfer in Photovoltaic Modules}
-\begin{itemize}
-    \item What is heat transfer?
-    \item What are the types of heat transfer?
-    \item What is the fundamental concept of heat transfer?
-    \item What are some convection principles used to enhance heat transfer in a photovoltaic module?
-\end{itemize}
+\subsubsection{Conduction} % How does conduction transfer heat in pv modules
+\subsubsection{Radiation} % How does radiation transfer heat in pv modules
+\subsubsection{Convection} % How does convection transfer heat in pv modules
+\paragraph{Natural Convection and the Relevant Cooling Methods} % What role does natural convection play in the convective heat transfer in pv modules
+\paragraph{Forced Convection and the Relevant Cooling Methods} % What role does natural convection play in the convective heat transfer in pv modules
+\subsubsection{Vortex Generators: Vortex Induced Heat Induction} % How are vortices used to induce heat induction
 
-\subsubsection{Vortex Induced Heat Transfer}
-\begin{itemize}
-    \item What is a vortex?
-    \item How does a vortex/system of vortexes induce heat transfer?
-    \item Are there any drawbacks of vortex-induced heat transfer? If so, what are they?
-\end{itemize}
+\pagebreak
+\subsection{Experimental Techniques}
+\subsubsection{Infrared Thermography}
+\subsubsection{Thermocouple Sensors}
+\subsubsection{Particle Image Velocimetry}
 
-\subsubsection{Conduction}
-\begin{itemize}
-    \item What is conduction?
-    \item How can conduction be used to enhance heat transfer?
-    \item What are some examples of this principle in practice?
-    \item What were the results of this practice?
-    \item Are there any drawbacks of conduction as a method to enhance heat transfer?
-\end{itemize}
+\pagebreak
+\subsection{Literature Gap}
 
-\subsubsection{Radiation}
-\begin{itemize}
-    \item What is radiation?
-    \item How can radiation be used to enhance heat transfer?
-    \item What are some examples of this principle in practice?
-    \item What were the results of this practice?
-    \item Are there any drawbacks of radiation as a method to enhance heat transfer?
-\end{itemize}
+\pagebreak
+% \subsection{Heat Transfer in Photovoltaic Modules}
+% \begin{itemize}
+%     \item What is heat transfer?
+%     \item What are the types of heat transfer?
+%     \item What is the fundamental concept of heat transfer?
+%     \item What are some convection principles used to enhance heat transfer in a photovoltaic module?
+% \end{itemize}
 
-\subsection{Convective Photovoltaic Module Cooling Methods}
-\begin{itemize}
-    \item What is convection?
-    \item What are some cooling methods for convective photovoltaic modules?
-\end{itemize}
+% \subsubsection{Vortex Induced Heat Transfer}
+% \begin{itemize}
+%     \item What is a vortex?
+%     \item How does a vortex/system of vortexes induce heat transfer?
+%     \item Are there any drawbacks of vortex-induced heat transfer? If so, what are they?
+% \end{itemize}
 
-\subsubsection{Cooling through Natural Convection}
-\begin{itemize}
-    \item What is Natural Convection?
-    \item How is natural convection used as a cooling method for photovoltaic modules?
-    \item Are there drawbacks to natural convection as a cooling method for photovoltaic modules?
-    \item How does forced convection compare to natural convection as a cooling method for photovoltaic modules?
-\end{itemize}
+% \subsubsection{Conduction}
+% \begin{itemize}
+%     \item What is conduction?
+%     \item How can conduction be used to enhance heat transfer?
+%     \item What are some examples of this principle in practice?
+%     \item What were the results of this practice?
+%     \item Are there any drawbacks of conduction as a method to enhance heat transfer?
+% \end{itemize}
 
-\subsubsection{Cooling through Forced Convection}
-\begin{itemize}
-    \item What is forced convection?
-    \item How is forced convection used as a cooling method for photovoltaic modules?
-    \begin{itemize}
-        \item DC Fan Experiment
-        \item Floating Photovoltaic Module Experiment
-    \end{itemize}
-    \item Are there drawbacks to forced convection as a cooling method for photovoltaic modules?
-    \item Air vs Water Cooling Experiment
-    \item Air Cooled Modified Photovoltaic Module Experiment
-    \item Single Fin vs Multiple Fin Experiment
-\end{itemize}
+% \subsubsection{Radiation}
+% \begin{itemize}
+%     \item What is radiation?
+%     \item How can radiation be used to enhance heat transfer?
+%     \item What are some examples of this principle in practice?
+%     \item What were the results of this practice?
+%     \item Are there any drawbacks of radiation as a method to enhance heat transfer?
+% \end{itemize}
 
-\subsubsection{Cooling through Vortex Generators}
-\begin{itemize}
-    \item What is a vortex generator?
-    \item What is the purpose of vortex generators?
-    \item Examples of Vortex Generator Experiments in the Context of Photovoltaic Module Cooling
-\end{itemize}
+% \subsection{Convective Photovoltaic Module Cooling Methods}
+% \begin{itemize}
+%     \item What is convection?
+%     \item What are some cooling methods for convective photovoltaic modules?
+% \end{itemize}
+
+% \subsubsection{Cooling through Natural Convection}
+% \begin{itemize}
+%     \item What is Natural Convection?
+%     \item How is natural convection used as a cooling method for photovoltaic modules?
+%     \item Are there drawbacks to natural convection as a cooling method for photovoltaic modules?
+%     \item How does forced convection compare to natural convection as a cooling method for photovoltaic modules?
+% \end{itemize}
+
+% \subsubsection{Cooling through Forced Convection}
+% \begin{itemize}
+%     \item What is forced convection?
+%     \item How is forced convection used as a cooling method for photovoltaic modules?
+%     \begin{itemize}
+%         \item DC Fan Experiment
+%         \item Floating Photovoltaic Module Experiment
+%     \end{itemize}
+%     \item Are there drawbacks to forced convection as a cooling method for photovoltaic modules?
+%     \item Air vs Water Cooling Experiment
+%     \item Air Cooled Modified Photovoltaic Module Experiment
+%     \item Single Fin vs Multiple Fin Experiment
+% \end{itemize}
+
+% \subsubsection{Cooling through Vortex Generators}
+% \begin{itemize}
+%     \item What is a vortex generator?
+%     \item What is the purpose of vortex generators?
+%     \item Examples of Vortex Generator Experiments in the Context of Photovoltaic Module Cooling
+% \end{itemize}
