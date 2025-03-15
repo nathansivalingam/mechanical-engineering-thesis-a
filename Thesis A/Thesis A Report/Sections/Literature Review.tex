@@ -51,15 +51,14 @@ A photovoltaic module is made up of multiple photovoltaic cells, commonly known 
 
 \noindent When a proton strikes the silicon photovoltaic cell with the required energy, an electron is knocked out of its bond. Because of the electric field at the p-n junction, the negatively charged electron moves toward the n-side, while the resulting positively charged hole is attracted to the p-side. The free electrons are collected by thin metal fingers positioned at the top of the photovoltaic cell, before travelling through an external circuit. After electrical work is performed, the electrons are returned to the conductive aluminium sheet positioned at the back of the photovoltaic cell. Since electrons follow a continuous cycle and are the only moving components, there is no wear and tear, allowing photovoltaic cells to last for decades. \cite{TED-Ed2016HowKomp} However, they still have limitations.\vspace{0.5em}
 
-
 \pagebreak
 \subsection{Limitations of Photovoltaic Modules}
-\subsubsection{What are the limitations of Photovoltaic Modules?}
-A major limitation of photovoltaic modules is their electrical efficiency, particularly at high temperatures. A review led by Swapnil Dubey from Nanyang Technological University stated that a standard photovoltaic module typically converts 6-20 percent of incoming solar radiation into electrical energy. The remaining 80-94 percent is primarily converted into heat, which raises the module's temperature and further reduces its efficiency. \cite{Dubey2013TemperatureReview}\vspace{0.5em}
+A major limitation of photovoltaic modules is their declining electrical efficiency, particularly at high temperatures. A review by Swapnil Dubey of Nanyang Technological University found that standard photovoltaic modules typically convert 6-20\% of incoming solar radiation into electrical energy. The remaining 80-94\% is mostly converted into heat, increasing the module’s temperature and further lowering its efficiency.\cite{Dubey2013TemperatureReview}\vspace{0.5em}
 
-\noindent A 2010 study led by H.G. Teo from the National University of Singapore further refined the electrical efficiency range of photovoltaic modules to between 8 and 14 percent. In the study, Teo et al. focused on comparing the electrical efficiency of photovoltaic modules under cooling and non-cooling conditions.\par\vspace{0.5em}
+% An active cooling system for photovoltaic modules - H.G. Teo
+\noindent A 2010 study led by H.G. Teo from the National University of Singapore further refined the electrical efficiency range to 8-14\%. In the study, Teo et al. focused on comparing the electrical efficiency of photovoltaic modules under cooling and non-cooling conditions.\par\vspace{0.5em}
 
-\noindent Teo et al. observed that as the temperature of the photovoltaic module increases, its electrical efficiency decreases linearly, as shown in Figure \ref{fig:electrical_efficiency_vs_temperature_pv_module}. They also found that without active cooling, the module temperature was significantly higher than when active cooling was applied under the same meteorological conditions. Thus, active cooling improved the module’s electrical efficiency from 8–9 percent to 12–14 percent. \cite{Teo2012AnModules}
+\noindent Teo et al. observed that the electrical efficiency of the photovoltaic module dcreases as the temperature of the module increases, as shown in Figure \ref{fig:electrical_efficiency_vs_temperature_pv_module}. They also found that without active cooling, the module temperature was significantly higher than when active cooling was applied under the same meteorological conditions. Thus, active cooling improved the module’s electrical efficiency from 8–9\% to 12–14\%. \cite{Teo2012AnModules}
 
 \begin{figure}[ht]
     \centering
@@ -69,14 +68,25 @@ A major limitation of photovoltaic modules is their electrical efficiency, parti
 \end{figure}
 \FloatBarrier
 
-\noindent The inverse linear relationship between the temperature and the electrical efficiency of a photovoltaic module is due to changes in the band gap of the semiconductor material. \vspace{0.5em}
+\noindent The inverse linear relationship between temperature and the electrical efficiency of a photovoltaic module is attributed to the band gap reduction, which occurs as the module's temperature increases.\vspace{0.5em}
 
 % An explanation as to how increased module temperature leads to band gap reduction
-\noindent In 1931, A.H. Wilson's paper, \textit{The Theory of Electronic Semi-Conductors}, introduced the idea that semiconductors have a small but finite band gap that affects their electrical conductivity. \cite{Il1931TheSemi-Conductors} The band gap represents the amount of energy that an electron must possess to jump from the valence band, where valence electrons are confined, to the conduction band. When valence electrons receive enough energy from an external source, they are able to undergo this band transition, allowing the material to conduct electricity. \cite{CircuitBread2018BandElectronics} As the temperature of the photovoltaic module increases, the valence electrons in the semiconductor material are excited. Thus, the energy required for an electron to transition from the valence band to the conduction band decreases, as indicated by a reduction in the band gap. \cite{Renewable_Tek2025HOTExplained} \par\vspace{0.5em}
+\noindent In 1931, A.H. Wilson's paper, \textit{The Theory of Electronic Semi-Conductors}, introduced the idea that semiconductors have a small but finite band gap that affects their electrical conductivity. \cite{Il1931TheSemi-Conductors} The band gap represents the amount of energy that an electron must possess to jump from the valence band, where valence electrons are confined, to the conduction band. When valence electrons receive enough energy from an external source, they are able to undergo this band transition, which allows the material to conduct electricity. \cite{CircuitBread2018BandElectronics} As the temperature of the photovoltaic module increases, the valence electrons in the semiconductor material are excited. Thus, the energy required for an electron to transition from the valence band to the conduction band decreases, as indicated by a reduction in the band gap. \cite{Renewable_Tek2025HOTExplained} \par\vspace{0.5em}
 
-% Explaining the relationship between the band gap and electrical efficiency of a pv module
-\noindent \textbf{Band gap vs Open circuit voltage}\par
-\noindent A 1994 study led by P. Baruch from the University of Paris derived a formula for determining the minimum value of the diode saturation current, as presented in Equation \ref{eq:minimum_diode_saturation_current}.
+% Electrical efficiency of a photovoltaic module
+\subsubsection{Electrical Efficiency, $\eta$}\par
+\noindent To understand the proportional relationship between the band gap and the electrical efficiency, an inspection of the formula used to calculate the electrical efficiency of a photovoltaic cell, shown in Equation \ref{eq:pv_cell_efficiency_function}, is required. \cite{HonsbergSolarEfficiency}
+
+\begin{equation}
+    \eta = \frac{V_\text{OC}I_\text{SC}FF}{P_\text{in}}
+    \label{eq:pv_cell_efficiency_function}
+\end{equation}
+
+\noindent The open circuit voltage, short circuit current and fill factor are all affected by the band gap. Therefore, an investigation into the effect of a reduced band gap on these aforementioned variables is necessary to evaluate the impact that the band gap has on the electrical efficiency of the photovoltaic module.\par\vspace{0.5em}
+
+% Open circuit voltage
+\subsubsection{Open-circuit voltage, $V_\text{OC}$}\par
+\noindent A 1994 study led by P. Baruch from the University of Paris derived a formula for determining the minimum value of the diode saturation current, as shown in Equation \ref{eq:minimum_diode_saturation_current}.
 
 \begin{equation}
     J_0 = \frac{q}{k} \frac{15\sigma}{\pi^4} T^3 \int_{u}^{\infty} \frac{x^2}{e^x - 1}\,dx
@@ -85,7 +95,7 @@ A major limitation of photovoltaic modules is their electrical efficiency, parti
 
 \noindent where $u = \frac{E_G}{kT}$. \cite{Baruch1995OnConversion} A casual inspection of Equation \ref{eq:minimum_diode_saturation_current} shows a relationship between the band gap energy and the diode saturation current. However, it is not immediately obvious what the nature of the relationship is due to the complexity of the integral function.\vspace{0.5em}
 
-\noindent Just over a decade later, Michael Y. Levy and Christiana Honsberg from the University of Delaware proposed a method to evaluate the integral in Baruch's formula. \cite{Levy2006RapidApplications} Then, in 2017, Honsberg collaborated with Stuart Bowden to graph the relationship between the diode saturation current and the band gap based on this method, as shown in Figure \ref{fig:diode_saturation_current_bandgap_graph}.\par
+\noindent Just over a decade later, Michael Y. Levy and Christiana Honsberg from the University of Delaware proposed a method to evaluate the integral in Baruch's formula. \cite{Levy2006RapidApplications} Then, in 2017, Honsberg worked with Stuart Bowden to graph the relationship between the diode saturation current and the band gap based on this method, as shown in Figure \ref{fig:diode_saturation_current_bandgap_graph}.\par
 
 \begin{figure}[ht]
     \centering
@@ -95,14 +105,12 @@ A major limitation of photovoltaic modules is their electrical efficiency, parti
 \end{figure}
 \FloatBarrier
 
-\noindent Honsberg and Bowden were then able to use the diode saturation current, $J_0$, denoted in Equation \ref{eq:open_circuit_voltage_function} as $I_0$, to calculate the open circuit voltage.\par
+\noindent Honsberg and Bowden used the diode saturation current values, $J_0$, from Figure \ref{fig:diode_saturation_current_bandgap_graph}, denoted as $I_0$ in Equation \ref{eq:open_circuit_voltage_function}, to calculate the open-circuit voltage as a function of the band gap. The linearly proportional relationship between the band gap and the open-circuit voltage is shown in Figure \ref{fig:open-circuit_voltage_bandgap_graph}.\par
 
 \begin{equation}
     V_{OC} = \frac{n k T}{q} \times \ln\left(\frac{I_L}{I_0} + 1\right)
     \label{eq:open_circuit_voltage_function}
 \end{equation}
-
-\noindent Thus, they were able to conclude that the open-circuit voltage is linearly proportional to the band gap, as shown in Figure \ref{fig:open-circuit_voltage_bandgap_graph}. \cite{HonsbergOpen-CircuitVoltage}\par
 
 \begin{figure}[ht]
     \centering
@@ -112,17 +120,42 @@ A major limitation of photovoltaic modules is their electrical efficiency, parti
 \end{figure}
 \FloatBarrier
 
-\noindent \textbf{Band gap vs Short circuit current}\par
-\noindent - While short circuit current, $I_\text{SC}$, does increase as the band gap reduces, as shown in Figure \ref{fig:short_circuit_current_density_bandgap_graph}, the open-circuit voltage overpowers the 
+\noindent Thus, the reduced band gap that results from an increase in the temperature of the photovoltaic module leads to a decrease in the open-circuit voltage.\par\vspace{0.5em}
+
+\pagebreak
+% Short circuit current
+\subsubsection{Short circuit current, $I_\text{SC}$}\par
+\noindent Honsberg and Bowden also graphed the relationship between the band gap and the short circuit current density, as shown in Figure \ref{fig:short_circuit_current_density_bandgap_graph}.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.70\textwidth]{Figures/short_circuit_current_density_bandgap_graph.png}
-    \caption{In an ideal device every photon above the band gap gives one charge carrier in the external circuit so the highest current is for the lowest band gap. \cite{HonsbergOpen-CircuitVoltage}}
+    \caption{$J_\text{SC}$ as a function of band gap for a cell with AM 0 and AM 1.5. \cite{HonsbergOpen-CircuitVoltage}}
     \label{fig:short_circuit_current_density_bandgap_graph}
 \end{figure}
 \FloatBarrier
 
+\noindent From Figure \ref{fig:short_circuit_current_density_bandgap_graph}, it is evident that a band gap reduction corresponds to an increase in the short circuit current density. Equation \ref{short_circuit_current_function} shows a linearly proportional relationship between the short circuit current and the short circuit current density.
+
+\begin{equation}
+    I_\text{SC} = J_\text{SC}A
+    \label{short_circuit_current_function}
+\end{equation}
+
+\noindent Therefore, a decreased band gap leads to an increase in the short circuit current.\par
+
+% Fill Factor
+\subsubsection{Fill factor, $FF$}\par
+\noindent - INSERT EQUATION\par
+\noindent - Cite Paper\par
+\noindent - Generate graph\par
+
+% Resultant conclusion
+\subsubsection{Conclusion}
+\noindent - Therefore BLAH BLAH BLAH\par
+
+\subsubsection{How do we reduce the impact of these limitations?}
+By finding ways to cool the module temperature.\par
 
 % \noindent - A 2022 study, led by Ali.O.M. Maka of Heriot-Watt University confirmed Teo et al.'s results regarding the inverse linear relationship between the temperature of the photovoltaic module and its electrical efficiency.\par
 % \noindent - Maka et al. found that the band gap energy of the semiconductor materials reduces as the temperature of the photovoltaic module increases.
@@ -137,8 +170,7 @@ A major limitation of photovoltaic modules is their electrical efficiency, parti
 % \noindent - As a result, the energy required for electrons to jump from the valence band to the construction band is reduced, indicating a reduction in band-gap energy.\par
 % \noindent - A reduction in band-gap energy leads to an increase in dark-saturation current, $I_{\text{O}}$.\par
 
-\subsubsection{How do we reduce the impact of these limitations?}
-By finding ways to cool the module temperature.\par
+
 
 \pagebreak
 \subsection{Heat Transfer in Photovoltaic Modules}
