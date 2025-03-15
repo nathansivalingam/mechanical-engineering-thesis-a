@@ -26,17 +26,12 @@ Sunlight is made up of massless particles called photons, which possess a certai
 \end{figure}
 \FloatBarrier
 
-\noindent The photoelectric effect will occur only if the frequency of the radiation is greater than the threshold frequency of the metal. The threshold frequency is the minimum frequency of light that causes electrons to be emitted from a material. The proportional relationship that exists between the threshold frequency and the work function is shown in Equation \ref{eq:workfunction} below:
+\noindent The photoelectric effect will occur only if the frequency of the radiation is greater than the threshold frequency of the metal. The threshold frequency is the minimum frequency of light that causes electrons to be emitted from a material. The proportional relationship that exists between the threshold frequency and the work function is shown in Equation \ref{eq:work_function}.
 \begin{equation}
     E = hf_0
-    \label{eq:workfunction}
+    \label{eq:work_function}
 \end{equation}
-Where:
-\begin{itemize}
-    \item $E$ is the work function.
-    \item ($h = 6.62607015 \times 10^{34}$ joule-second) is Planck's constant.
-    \item $f_0$ is the threshold frequency. 
-\end{itemize}\vspace{0.5em}
+
 \noindent The work function refers to the minimum amount of energy needed to remove an electron from a metal surface. If photons with enough energy hit the surface, they can transfer their energy to the electrons allowing them to escape. If the energy of the incident photons is less than the work function, no electrons will be emitted, regardless of the intensity of the light. \cite{ScienceABC2025PhotoelectricBeginners}\vspace{0.5em}
 
 \subsubsection{How do photovoltaic modules work?}
@@ -58,7 +53,7 @@ A photovoltaic module is made up of multiple photovoltaic cells, commonly known 
 
 \subsection{Limitations of Photovoltaic Modules}
 \subsubsection{What are the limitations of Photovoltaic Modules?}
-A significant limitation of photovoltaic modules is their electrical efficiency, particularly at high temperatures. A review led by Swapnil Dubey from Nanyang Technological University stated that a standard photovoltaic module typically converts 6-20 percent of incoming solar radiation into electrical energy. The remaining 80 to 94 percent is primarily converted into heat, which raises the module's temperature and further reduces its efficiency. \cite{Dubey2013TemperatureReview}\vspace{0.5em}
+A major limitation of photovoltaic modules is their electrical efficiency, particularly at high temperatures. A review led by Swapnil Dubey from Nanyang Technological University stated that a standard photovoltaic module typically converts 6-20 percent of incoming solar radiation into electrical energy. The remaining 80-94 percent is primarily converted into heat, which raises the module's temperature and further reduces its efficiency. \cite{Dubey2013TemperatureReview}\vspace{0.5em}
 
 \noindent A 2010 study led by H.G. Teo from the National University of Singapore further refined the electrical efficiency range of photovoltaic modules to between 8 and 14 percent.\par 
 
@@ -77,7 +72,80 @@ A significant limitation of photovoltaic modules is their electrical efficiency,
 \FloatBarrier
 
 \noindent\textbf{Why did Teo et al.'s results show that an increase in the temperature of the module causes a decline in the module's electrical efficiency?}\par
-\noindent - 
+\noindent - A 2022 study, led by Ali.O.M. Maka of Heriot-Watt University confirmed Teo et al.'s results regarding the inverse linear relationship between the temperature of the photovoltaic module and its electrical efficiency.\par
+\noindent - Maka et al. focused on the following electrical performance parameters:\par 
+\begin{itemize}
+    \item Short current density, $J_\text{sc,i}$
+    \item Total current density, $J,i$
+    \item Open circuit voltage, $V_\text{OC,i}$
+    \item Fill Factor, FF
+    \item Maximum Power, $P_\text{max}$
+    \item Cell efficiency, $\eta$
+\end{itemize}
+\noindent - Maka et al. found that the band gap energy of the semiconductor materials reduces as the temperature of the photovoltaic module increases.\vspace{0.5em}
+
+\noindent \textbf{Understanding Band Gap}\par
+\noindent - The Bohr model describes an atom as having a central nucleus comprised of protons and neutrons that is surrounded by orbiting electrons.\par
+\noindent - The orbits surrounding the nucleus are grouped into energy levels known as shells.\par
+\noindent - The outermost shell is called the valence shell.\par
+\noindent - The valence shell of an atom represents a band of energy levels, which is why it is also known as a valence band.\par
+\noindent - Valence electrons are confined to the valence band.\par
+\noindent - When valence electrons get enough energy from an external source, they can escape from the valence band and jump to the conduction band.\par
+\noindent - The amount of energy that an electron must possess to jump from the valence band to the conduction band is called the band gap.\par\vspace{0.5em}
+
+\noindent \textbf{How does the temperature of the photovoltaic module affect the band gap of the semiconductor material?}\par
+\noindent - As the temperature of the photovoltaic module increases, the valence electrons in the semiconductor material are excited.\par
+\noindent - Therefore, the energy required for an electron to transition from the valence band to the conduction band decreases, resulting in a reduction of the band gap.\par\vspace{0.5em}
+
+\noindent \textbf{How does a reduced band gap affect the electrical efficiency of the photovoltaic module?}\par
+\noindent A 1994 study led by P. Baruch from the University of Paris derived a formula for determining the minimum value of the diode saturation current, as presented in Equation \ref{eq:minimum_diode_saturation_current}.
+
+\begin{equation}
+    J_0 = \frac{q}{k} \frac{15\sigma}{\pi^4} T^3 \int_{u}^{\infty} \frac{x^2}{e^x - 1}\,dx
+    \label{eq:minimum_diode_saturation_current}
+\end{equation}
+
+\noindent where $u = \frac{E_G}{kT}$. \cite{Baruch1995OnConversion}\par\vspace{0.5em}
+
+\noindent Just over a decade later, Michael Y. Levy and Christiana Honsberg from the University of Delaware proposed a method to evaluate the integral in Baruch's formula. \cite{Levy2006RapidApplications}\par\vspace{0.5em}
+\noindent In 2017, Honsberg worked with Stuart Bowden to graph the relationship of the diode saturation current and the band gap based on this method, shown in Figure \ref{fig:diode_saturation_current_bandgap_graph}.\par
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/diode_saturation_current_bandgap_graph.png}
+    \caption{Diode saturation current as a function of band gap. The values are determined from detailed balance and place a limit on the open circuit voltage of a solar cell. \cite{Honsberg2025Open-CircuitVoltage}}
+    \label{fig:diode_saturation_current_bandgap_graph}
+\end{figure}
+\FloatBarrier
+
+\noindent Honsberg and Bowden were then able to use the diode saturation current, $J_0$, denoted in Equation \ref{eq:open_circuit_voltage_function} as $I_L$, to calculate the open circuit voltage.\par
+
+\begin{equation}
+    V_{OC} = \frac{n k T}{q} \times \ln\left(\frac{I_L}{I_0} + 1\right)
+    \label{eq:open_circuit_voltage_function}
+\end{equation}
+
+\noindent Thus, they were able to conclude that the open-circuit voltage is linearly proportional to the band gap, shown in Figure \ref{fig:open-circuit_voltage_bandgap_graph}. \cite{Honsberg2025Open-CircuitVoltage}\par
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/open-circuit_voltage_bandgap_graph.png}
+    \caption{$V_\text{OC}$ as a function of band gap for a cell with AM 0 and AM 1.5. The $V_\text{OC}$ increases with bang gap as the recombination current falls. There is drop off in $V_\text{OC}$ at very high band gaps due to the very low $I_\text{SC}$. \cite{Honsberg2025Open-CircuitVoltage}}
+    \label{fig:open-circuit_voltage_bandgap_graph}
+\end{figure}
+\FloatBarrier
+
+\noindent Maka et al. identified open-circuit voltage as a main performance parameter of electrical efficiency. Therefore, the band gap reduction due to an increase in the temperature of the photovoltaic module results in a reduction in the module's electrical efficiency.\par\vspace{0.5em}
+
+% \noindent - Temperature coefficient of solar panels\par
+% \noindent - Temperature coefficient: For every degree increase in temperature, solar panels lose a percentage of their power output\par
+% \noindent - Higher T reduces Voltage generated by the solar panel\par
+% \noindent - There is a slight increase in current but the overall power still decreases\par
+
+% \noindent - As the temperature of the module increases, atoms in the semiconductor lattice experience more vibrations.\par
+% \noindent - The expansion due to the atomic vibrations weakens the bonding forces between atoms.\par
+% \noindent - As a result, the energy required for electrons to jump from the valence band to the construction band is reduced, indicating a reduction in band-gap energy.\par
+% \noindent - A reduction in band-gap energy leads to an increase in dark-saturation current, $I_{\text{O}}$.\par
 
 \subsubsection{How do we reduce the impact of these limitations?}
 By finding ways to cool the module temperature.\par

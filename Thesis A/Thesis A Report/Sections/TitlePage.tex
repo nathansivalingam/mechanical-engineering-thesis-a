@@ -32,8 +32,29 @@
 % \nomenclature[1D]{\(D\)}{…}
 % \nomenclature[1alpha]{\(\alpha\)}{…}
 % \nomenclature[2TLA]{\(TLA\)}{…}
-\nomenclature[A]{\(PV\)}{Photovoltaic}
-\nomenclature[B]{\(PIV\)}{Particle Image Velocimetry}
+
+\renewcommand{\nomgroup}[1]{%
+  \ifthenelse{\equal{#1}{A}}{\item[\textbf{Abbreviations}]}{}%
+  \ifthenelse{\equal{#1}{B}}{\item[\textbf{Parameters}]}{}%
+  \ifthenelse{\equal{#1}{C}}{\item[\textbf{Greek Symbols}]}{}%
+  \ifthenelse{\equal{#1}{D}}{\item[\textbf{Subscripts}]}{}%
+}
+
+\nomenclature[A]{\(PV\)}{photovoltaic}
+\nomenclature[A]{\(PIV\)}{particle image velocimetry}
+\nomenclature[A]{\(AM\)}{air mass}
+\nomenclature[B]{\(E\)}{work function (J)}
+\nomenclature[B]{\(h\)}{Planck's constant (J s)}
+\nomenclature[B]{\(f_0\)}{threshold frequency (Hz)}
+\nomenclature[B]{}{}
+\nomenclature[B]{}{}
+\nomenclature[B]{}{}
+\nomenclature[B]{}{}
+\nomenclature[B]{\(V_\text{OC}\)}{open-circuit voltage (V)}
+\nomenclature[B]{\(n\)}{ideality factor}
+\nomenclature[B]{\(k\)}{Boltzmann constant (J K\(^{-1}\))}
+\nomenclature[B]{\(T\)}{temperature (\(^\circ\)C)}
+
 
 \printnomenclature
 
