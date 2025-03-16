@@ -53,12 +53,12 @@ A photovoltaic module is made up of multiple photovoltaic cells, commonly known 
 
 \pagebreak
 \subsection{Limitations of Photovoltaic Modules}
-A major limitation of photovoltaic modules is their declining electrical efficiency, particularly at high temperatures. A review by Swapnil Dubey of Nanyang Technological University found that standard photovoltaic modules typically convert 6-20\% of incoming solar radiation into electrical energy. The remaining 80-94\% is mostly converted into heat, increasing the module’s temperature and further lowering its efficiency.\cite{Dubey2013TemperatureReview}\vspace{0.5em}
+A major limitation of photovoltaic modules is their declining electrical efficiency, particularly at high temperatures. A review led by Swapnil Dubey of Nanyang Technological University found that standard photovoltaic modules typically convert 6-20\% of incoming solar radiation into electrical energy. The remaining 80-94\% is mostly converted into heat, increasing the module’s temperature and further lowering its efficiency. \cite{Dubey2013TemperatureReview}\vspace{0.5em}
 
 % An active cooling system for photovoltaic modules - H.G. Teo
-\noindent A 2010 study led by H.G. Teo from the National University of Singapore further refined the electrical efficiency range to 8-14\%. In the study, Teo et al. focused on comparing the electrical efficiency of photovoltaic modules under cooling and non-cooling conditions.\par\vspace{0.5em}
+\noindent A 2010 study led by H.G. Teo from the National University of Singapore refined Dubey et al.'s electrical efficiency range to 8-14\%. In the study, Teo et al. focused on comparing the electrical efficiency of photovoltaic modules under cooling and non-cooling conditions.\par\vspace{0.5em}
 
-\noindent Teo et al. observed that the electrical efficiency of the photovoltaic module dcreases as the temperature of the module increases, as shown in Figure \ref{fig:electrical_efficiency_vs_temperature_pv_module}. They also found that without active cooling, the module temperature was significantly higher than when active cooling was applied under the same meteorological conditions. Thus, active cooling improved the module’s electrical efficiency from 8–9\% to 12–14\%. \cite{Teo2012AnModules}
+\noindent Teo et al. observed that the electrical efficiency of the photovoltaic module decreased as the temperature of the module increased, as shown in Figure \ref{fig:electrical_efficiency_vs_temperature_pv_module}. They also found that without active cooling, the module temperature was significantly higher than when active cooling was applied under the same meteorological conditions. Thus, active cooling improved the module’s electrical efficiency from 8–9\% to 12–14\%. \cite{Teo2012AnModules}
 
 \begin{figure}[ht]
     \centering
@@ -68,13 +68,12 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 \end{figure}
 \FloatBarrier
 
-\noindent The inverse linear relationship between temperature and the electrical efficiency of a photovoltaic module is attributed to the band gap reduction, which occurs as the module's temperature increases.\vspace{0.5em}
+\noindent The inverse linear relationship between the temperature and the electrical efficiency of a photovoltaic module is attributed to the band gap reduction, which occurs as the module's temperature increases.\vspace{0.5em}
 
 % An explanation as to how increased module temperature leads to band gap reduction
 \noindent In 1931, A.H. Wilson's paper, \textit{The Theory of Electronic Semi-Conductors}, introduced the idea that semiconductors have a small but finite band gap that affects their electrical conductivity. \cite{Il1931TheSemi-Conductors} The band gap represents the amount of energy that an electron must possess to jump from the valence band, where valence electrons are confined, to the conduction band. When valence electrons receive enough energy from an external source, they are able to undergo this band transition, which allows the material to conduct electricity. \cite{CircuitBread2018BandElectronics} As the temperature of the photovoltaic module increases, the valence electrons in the semiconductor material are excited. Thus, the energy required for an electron to transition from the valence band to the conduction band decreases, as indicated by a reduction in the band gap. \cite{Renewable_Tek2025HOTExplained} \par\vspace{0.5em}
 
 % Electrical efficiency of a photovoltaic module
-\subsubsection{Electrical Efficiency, $\eta$}\par
 \noindent To understand the proportional relationship between the band gap and the electrical efficiency, an inspection of the formula used to calculate the electrical efficiency of a photovoltaic cell, shown in Equation \ref{eq:pv_cell_efficiency_function}, is required. \cite{HonsbergSolarEfficiency}
 
 \begin{equation}
@@ -85,7 +84,6 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 \noindent The open circuit voltage, short circuit current and fill factor are all affected by the band gap. Therefore, an investigation into the effect of a reduced band gap on these aforementioned variables is necessary to evaluate the impact that the band gap has on the electrical efficiency of the photovoltaic module.\par\vspace{0.5em}
 
 % Open circuit voltage
-\subsubsection{Open-circuit voltage, $V_\text{OC}$}\par
 \noindent A 1994 study led by P. Baruch from the University of Paris derived a formula for determining the minimum value of the diode saturation current, as shown in Equation \ref{eq:minimum_diode_saturation_current}.
 
 \begin{equation}
@@ -120,11 +118,10 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 \end{figure}
 \FloatBarrier
 
-\noindent Thus, the reduced band gap that results from an increase in the temperature of the photovoltaic module leads to a decrease in the open-circuit voltage.\par\vspace{0.5em}
+\noindent Thus, the reduced band gap due to the increased temperature of the photovoltaic module leads to a decrease in the open-circuit voltage.\par\vspace{0.5em}
 
 \pagebreak
 % Short circuit current
-\subsubsection{Short circuit current, $I_\text{SC}$}\par
 \noindent Honsberg and Bowden also graphed the relationship between the band gap and the short circuit current density, as shown in Figure \ref{fig:short_circuit_current_density_bandgap_graph}.
 
 \begin{figure}[ht]
@@ -142,37 +139,31 @@ A major limitation of photovoltaic modules is their declining electrical efficie
     \label{short_circuit_current_function}
 \end{equation}
 
-\noindent Therefore, a decreased band gap leads to an increase in the short circuit current.\par
+\noindent Therefore, a decrease in the band gap leads to an increase in the short-circuit current.\vspace{0.5em}
 
 % Fill Factor
-\subsubsection{Fill factor, $FF$}\par
-\noindent - INSERT EQUATION\par
-\noindent - Cite Paper\par
-\noindent - Generate graph\par
+\noindent In 1981, M.A. Green of the University of New South Wales proposed an empirical expression for the fill factor, as shown in Equation \ref{eq:fill_factor_function}.
+
+\begin{equation}
+    FF = \frac{v_\text{OC} - ln(v_\text{OC} + 0.72)}{v_\text{OC} + 1}
+    \label{eq:fill_factor_function}
+\end{equation}
+
+\noindent where $v_\text{OC}$ is defined as a normalised $V_\text{OC}$: $v_\text{OC} = \frac{q}{nkT} V_\text{OC}$.\vspace{0.5em}
+
+\noindent As established earlier in Figure \ref{fig:open-circuit_voltage_bandgap_graph}, a band gap reduction corresponds to a decrease in the open-circuit voltage. An evaluation of Equation \ref{eq:fill_factor_function} reveals that a decline in the open-circuit voltage and an increase in the temperature of the photovoltaic module causes a decrease in the fill factor. Therefore, it can be concluded that a band gap reduction causes a decrease in the fill factor.\vspace{0.5em}
 
 % Resultant conclusion
-\subsubsection{Conclusion}
-\noindent - Therefore BLAH BLAH BLAH\par
+\noindent To summarise, the band gap reduction that arises due to the increased temperature of the photovoltaic module causes a decrease in the open-circuit voltage, an increase in the short circuit current and a decrease in the fill factor. While the short circuit current does increase, it is ultimately outweighed by the decrease in the open-circuit voltage and fill factor, leading to a decrease in the module's electrical efficiency.\vspace{0.5em}
 
-\subsubsection{How do we reduce the impact of these limitations?}
-By finding ways to cool the module temperature.\par
-
-% \noindent - A 2022 study, led by Ali.O.M. Maka of Heriot-Watt University confirmed Teo et al.'s results regarding the inverse linear relationship between the temperature of the photovoltaic module and its electrical efficiency.\par
-% \noindent - Maka et al. found that the band gap energy of the semiconductor materials reduces as the temperature of the photovoltaic module increases.
-
-% \noindent - Temperature coefficient of solar panels\par
-% \noindent - Temperature coefficient: For every degree increase in temperature, solar panels lose a percentage of their power output\par
-% \noindent - Higher T reduces Voltage generated by the solar panel\par
-% \noindent - There is a slight increase in current but the overall power still decreases\par
-
-% \noindent - As the temperature of the module increases, atoms in the semiconductor lattice experience more vibrations.\par
-% \noindent - The expansion due to the atomic vibrations weakens the bonding forces between atoms.\par
-% \noindent - As a result, the energy required for electrons to jump from the valence band to the construction band is reduced, indicating a reduction in band-gap energy.\par
-% \noindent - A reduction in band-gap energy leads to an increase in dark-saturation current, $I_{\text{O}}$.\par
-
-
+% Additional factors that may limit the efficiency of the photovoltaic module
+\noindent - Environmental factors\par
+\noindent - Lack of regular maintenance\par
 
 \pagebreak
+\noindent \textbf{How do we reduce the impact of these limitations?}\par
+\noindent By finding ways to cool the module temperature.\par
+
 \subsection{Heat Transfer in Photovoltaic Modules}
 % \subsection{Heat Transfer in Photovoltaic Modules}
 % \begin{itemize}
@@ -208,6 +199,18 @@ By finding ways to cool the module temperature.\par
 
 \pagebreak
 
+% \noindent - A 2022 study, led by Ali.O.M. Maka of Heriot-Watt University confirmed Teo et al.'s results regarding the inverse linear relationship between the temperature of the photovoltaic module and its electrical efficiency.\par
+% \noindent - Maka et al. found that the band gap energy of the semiconductor materials reduces as the temperature of the photovoltaic module increases.
+
+% \noindent - Temperature coefficient of solar panels\par
+% \noindent - Temperature coefficient: For every degree increase in temperature, solar panels lose a percentage of their power output\par
+% \noindent - Higher T reduces Voltage generated by the solar panel\par
+% \noindent - There is a slight increase in current but the overall power still decreases\par
+
+% \noindent - As the temperature of the module increases, atoms in the semiconductor lattice experience more vibrations.\par
+% \noindent - The expansion due to the atomic vibrations weakens the bonding forces between atoms.\par
+% \noindent - As a result, the energy required for electrons to jump from the valence band to the construction band is reduced, indicating a reduction in band-gap energy.\par
+% \noindent - A reduction in band-gap energy leads to an increase in dark-saturation current, $I_{\text{O}}$.\par
 
 % \subsubsection{Vortex Induced Heat Transfer}
 % \begin{itemize}
