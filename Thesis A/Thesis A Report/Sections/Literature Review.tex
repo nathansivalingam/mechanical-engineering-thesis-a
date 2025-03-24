@@ -164,30 +164,40 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 
 \pagebreak
 \subsection{Heat Transfer in Photovoltaic Modules}
-\noindent Heat transfer is the process by which heat energy moves from one system or body to another as a result of a temperature difference.\par
-\noindent Figure \ref{fig:fundamental_concept_of_heat_transfer_diagram} demonstrates this fundamental concept of heat transfer.\par
-\begin{figure}[ht]
+\noindent The fundamental concept of heat transfer is the process by which heat energy moves from one system or body to another as a result of a temperature difference. This transfer of heat can occur via conduction, convection or radiation. Figure \ref{fig:fundamental_concept_of_heat_transfer_diagram} demonstrates the fundamental concept of heat transfer in the context of a photovoltaic module.\par
+
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.75\linewidth]{Figures/fundamental_concept_of_heat_transfer_diagram.png}
+    \includegraphics[width=0.75\textwidth]{Figures/fundamental_concept_of_heat_transfer_diagram.pdf}
     \caption{Fundamental concept of heat transfer on a photovoltaic module.}
     \label{fig:fundamental_concept_of_heat_transfer_diagram}
 \end{figure}
 
-\begin{itemize}
-    \item Heat transfer can be used to improve the electrical efficiency of photovoltaic modules.
-    \item \textbf{What is heat transfer:} Heat transfer is the process by which heat energy moves from one system or body to another as a result of a temperature difference.
-    \item \textbf{Types of heat transfer:} The three modes of heat transfer are conduction, radiation and convection.
-    \item \textbf{What is the fundamental concept of heat transfer:} I DON'T KNOW YET.
-    \item How can heat transfer principles be used to improve the performance of photovoltaic modules?\par
+\noindent In Figure \ref{fig:fundamental_concept_of_heat_transfer_diagram}, heat is first transferred to the mounting through conduction. Additionally, heat is transferred from the surface of the photovoltaic module to the surrounding air via convection. Finally, the module emits thermal radiation to its surroundings, contributing to radiative heat transfer. In 2020, P. Dwivedi from Maulana Azad National Institute of Technology, Bhopal, analysed the percentage distribution of heat loss across the different modes of heat transfer, observed in Table \ref{tab:heat_loss_from_pv_module}. \cite{Dwivedi2020AdvancedArt}\par
 
-\end{itemize}
+\begin{table}[ht]
+    \centering
+    \caption{Heat loss from P.V. module. \cite{Dwivedi2020AdvancedArt}}
+    \setlength{\tabcolsep}{50pt} % Adjust column spacing between columns
+    \renewcommand{\arraystretch}{1.5} % Increase row height
+    \begin{tabular}{@{\hspace{8pt}} l l l @{\hspace{8pt}}}
+         \hline
+         S.No & Heat loss from module & Percentage \\
+         \hline
+         1 & Conduction through mounting & 2 \\
+         2 & Convection from top surface & 42 \\
+         3 & Convection from bottom surface & 24 \\
+         4 & Radiation from top surface & 21 \\
+         5 & Radiation from bottom surface & 11 \\
+         \hline
+    \end{tabular}
+    \label{tab:heat_loss_from_pv_module}
+\end{table}
 
 \subsubsection{Conduction} % How does conduction transfer heat in pv modules
-\begin{itemize}
-    \item Conduction is the energy transfer from more energetic particles to less energetic particles of a substance.
-\end{itemize}
-% \noindent What is conduction?\par
-% \noindent How can conduction be used to cool down photovoltaic modules?\par
+\noindent P. Dwivedi et al. observed that conductive heat transfer accounts for 2\% of total heat loss.\par
+\noindent Conduction is the energy transfer from more energetic particles to less energetic particles of a substance.\par
+\noindent \textbf{Cooling Techniques for Conduction}\par
 % \noindent Why are they not the optimal source of heat transfer for cooling down photovoltaic module?\par
 
 \subsubsection{Radiation} % How does radiation transfer heat in pv modules
@@ -199,6 +209,7 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 % \noindent Why are they not the optimal source of heat transfer for cooling down photovoltaic module?\par
 
 \subsubsection{Convection} % How does convection transfer heat in pv modules
+\noindent P. Dwivedi et al. observed that convective heat transfer was the primary mode of heat transfer in photovoltaic modules, accounting for 66\% of total heat loss.
 \begin{itemize}
     \item Convection is the energy transfer between a solid surface and an adjacent liquid/gas in motion (combines effects of conduction and fluid motion).
 \end{itemize}
