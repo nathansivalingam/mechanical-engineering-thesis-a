@@ -195,8 +195,8 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 
 \noindent Thus, this paper will explore the effectiveness of conduction, convection, and radiation-based cooling methods in lowering the temperature of photovoltaic modules to enhance their overall efficiency.\par
 
-\subsubsection{Conduction} % How does conduction transfer heat in pv modules
-\noindent Conduction is the transfer of energy from the more energetic particles of a substance to the adjacent less energetic ones as a result of interactions between the particles. The formula commonly used to calculate the rate of heat conduction is shown in Equation \ref{eq:rate_of_heat_conduction_function}. \cite{Cengel2014HeatApplications}\par
+\subsubsection{Conduction}
+\noindent Conduction is the transfer of energy from the more energetic particles of a substance to the adjacent less energetic ones as a result of interactions between the particles. The formula commonly used to calculate the rate of heat conduction is shown in Equation \ref{eq:rate_of_heat_conduction_function}. \cite{Cengel2014IntroductionConcepts}\par
 
 \begin{equation}
     \dot{Q}_\text{cond} = -kA\frac{\Delta T}{\Delta x}
@@ -204,28 +204,32 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 \end{equation}
 
 \noindent The main conduction-based cooling methods used to reduce photovoltaic module temperatures are finned heat sinks and phase change materials.\vspace{0.5em}
+\noindent 
 
 % Finned Heat Sinks
 \noindent A heat sink is a component used in thermal management strategies to transfer heat effectively. It's design is optimised to dissipate heat. \cite{Kumar2024QualitativeReview} The use of a heat sink increases the cross-sectional area that the heat is being transferred to, denoted as A in Equation \ref{eq:rate_of_heat_conduction_function}. Through further inspection of Equation \ref{eq:rate_of_heat_conduction_function}, it is observed that the increased cross-sectional area, A, results in an increased rate of conductive heat transfer, $\dot{Q}_\text{cond}$. A study led by S.N. Razali from the National University of Malaysia investigated the effect of multidirectional tapered fin heat sinks (MTFHS) on photovoltaic modules. Razali et al. found that the proposed MTFHS reduced the module's temperature by $12^\circ \text{C}$, indicating enhanced conductive heat transfer, which consequently improved the photovoltaic module's efficiency by 1.53\% \cite{Razali2023PerformanceMTFHS}.\vspace{0.5em}
 
 % Phase Change Materials 
-\noindent A phase change material (PCM) is a material that can change its state from solid to liquid and vice versa by releasing and storing thermal energy. \cite{Nicholas2019ActivatedMaterial}\par
-\noindent When the surrounding temperature rises above the PCM’s melting point, it liquefies, drawing heat away from the photovoltaic module.\par
-\noindent Conversely, when the temperature drops below the melting point, the PCM solidifies, releasing the stored heat back into the environment.\par
-\noindent A 2023 study led by B. Hussain of the \par
+\noindent A phase change material (PCM) is a material that can change its state from solid to liquid and vice versa by releasing and storing thermal energy. \cite{Nicholas2019ActivatedMaterial} When the surrounding temperature rises above the PCM’s melting point, it liquefies, drawing heat away from the photovoltaic module. Conversely, when the temperature drops below the melting point, the PCM solidifies, releasing the stored heat back into the environment. A 2023 study by B. Hussain and colleagues at the Capital University of Science \& Technology found that incorporating PCM lowered the surface temperature of photovoltaic modules by $13.1^\circ \text{C}$, resulting in a 6.85\% increase in efficiency. \cite{Hussain2023Phase}\vspace{0.5em}
 
-% Why aren't we focusing on condution (Look at Barry's reason)
-\noindent - \par
+% Limitations of Conduction Based Cooling Methods
+\noindent While conduction-based cooling methods have been successful in improving photovoltaic module efficiency, they do have certain limitations.\par
+\noindent \par
 
-\subsubsection{Radiation} % How does radiation transfer heat in pv modules
-\begin{itemize}
-    \item Radiation is the energy that is emitted by matter and is transported as electromagnetic waves (or photons).
-\end{itemize}
-% \noindent What is radiation?\par
-% \noindent How can radiation be used to cool down photovoltaic modules?\par
-% \noindent Why are they not the optimal source of heat transfer for cooling down photovoltaic module?\par
+\subsubsection{Radiation}
+\noindent Radiation is the energy emitted by matter in the form of electromagnetic waves (or photons) due to changes in the electronic configurations of the atoms or molecules. In the context of heat transfer, the focus is on thermal radiation, which is the energy emitted by bodies due to their temperature. The formula commonly used to calculate the rate of radiation heat transfer is shown in Equation \ref{eq:rate_of_heat_radiation_function}. \cite{Cengel2014IntroductionConcepts}
 
-\subsubsection{Convection} % How does convection transfer heat in pv modules
+\begin{equation}
+    \dot{Q}_\text{rad} = \varepsilon\sigma A_s (T_s^4-T_\text{surr}^4)
+    \label{eq:rate_of_heat_radiation_function}
+\end{equation}
+
+% polydimethylsiloxane film
+\noindent In 2018, a study led by B. Zhao from the University of Science and Technology of China investigated the performance impact of radiation-based cooling methods on photovoltaic modules. Zhao et al. modified a photovoltaic module by adding a polydimethylsiloxane (PDMS) film on its top surface. PDMS is known to have high emissivity in the mid-infrared range ($8-13\,\mu m$). \cite{Song2020UltrahighRegime} Through an inspection of Equation \ref{eq:rate_of_heat_radiation_function}, it is observed that an increased emissivity, $\varepsilon$, causes an increase in the rate of radiative heat transfer, $\dot{Q}_\text{rad}$. In theory, the increased radiative heat transfer of the photovoltaic module lowers the module's temperature and improves it's efficiency. However, Zhao et al. found that the temperature of the photovoltaic module was only reduced by 1.75 K in the ideal case. Furthermore, this result was achieved using a simulated environment. Thus, Zhao et al. concluded that, in practical applications, enhanced radiative cooling does not offer significant potential for cooling photovoltaic modules. \cite{Zhao2018PerformanceModule}\vspace{0.5em}
+
+% Limitations of Radiation Based Cooling Methods
+
+\subsubsection{Convection}
 \noindent P. Dwivedi et al. observed that convective heat transfer was the primary mode of heat transfer in photovoltaic modules, accounting for 66\% of total heat loss.
 \begin{itemize}
     \item Convection is the energy transfer between a solid surface and an adjacent liquid/gas in motion (combines effects of conduction and fluid motion).
@@ -234,6 +238,13 @@ A major limitation of photovoltaic modules is their declining electrical efficie
 \paragraph{Natural Convection and the Relevant Cooling Methods (Passive Cooling)} % What role does natural convection play in the convective heat transfer in pv modules
 \paragraph{Forced Convection and the Relevant Cooling Methods (Active Cooling)} % What role does natural convection play in the convective heat transfer in pv modules
 \subsubsection{Vortex Generators: Vortex Induced Heat Induction} % How are vortices used to induce heat induction
+\begin{itemize}
+    \item Sophie's Research
+    \item Barry's Research
+    \item Ishan's Research
+    \item Matt's Research
+    \item Other People's Research
+\end{itemize}
 
 \pagebreak
 \subsection{Experimental Techniques}
