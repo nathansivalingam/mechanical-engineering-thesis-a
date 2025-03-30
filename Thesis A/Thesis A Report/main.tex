@@ -16,6 +16,10 @@
 \usepackage{amsmath}
 \usepackage[justification=centering]{caption}
 \usepackage[inkscapeformat=pdf]{svg}
+\usepackage{caption}
+
+% This should get rid of all the indents
+\setlength{\parindent}{0pt}
 
 % Set up fancyhdr for custom headers
 \pagestyle{fancy}
@@ -29,7 +33,7 @@
 
 % Command for nomenclature which is defined here prior to the start of the document
 \makenomenclature
-\renewcommand{\nompreamble}{(The nomenclature must respect the following order: latin symbols, Greek symbols, acronyms. Within each category of symbols, follow alphabetic order. An example is provided below)}
+% \renewcommand{\nompreamble}{(The nomenclature must respect the following order: latin symbols, Greek symbols, acronyms. Within each category of symbols, follow alphabetic order. An example is provided below)}
 
 % Redefine \subsubsubsection to include numbering
 \usepackage{chngcntr}
