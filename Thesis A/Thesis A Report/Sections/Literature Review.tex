@@ -236,18 +236,7 @@ Convection is the mode of energy transfer between a solid surface and the adjace
     \label{eq:rate_of_convective_heat_transfer_function}
 \end{equation}
 
-Convection is not a fundamental heat transfer mechanism; rather, it is a combined phenomenon, where heat conduction occurs in the presence of fluid motion. This interaction leads to the formation of velocity and thermal boundary layers at the object's surface. These boundary layers are illustrated in Figure \ref{fig:convective_heat_transfer_diagram} in the context of photovoltaic modules.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.75\linewidth]{Figures/convective_heat_transfer_diagram.pdf}
-    \caption{Heat transfer from the photovoltaic module to air by convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
-    \label{fig:convective_heat_transfer_diagram}
-\end{figure}
-\pagebreak
-
-\textbf{Explain the Velocity Boundary Layer}\par
-\textbf{How does the velocity boundary layer impact convection-based cooling methods (aka the rate of convective heat transfer from the photovoltaic module)}\par
+Convection is not a fundamental heat transfer mechanism; rather, it is a combined phenomenon, where heat conduction occurs in the presence of fluid motion. This interaction leads to the formation of velocity and thermal boundary layers at the object's surface. \cite{Cengel2014FundamentalsConvection}
 
 \begin{figure}[ht]
     \centering
@@ -255,6 +244,21 @@ Convection is not a fundamental heat transfer mechanism; rather, it is a combine
     \caption{Velocity boundary layer over a flat plate. \cite{Cengel2014FundamentalsConvection}}
     \label{fig:velocity_boundary_layer}
 \end{figure}
+
+% No slip condition
+Figure \ref{fig:velocity_boundary_layer} illustrates the velocity profile caused by parallel fluid flow over a flat plate. To understand this velocity profile, the fluid is modelled as a series of adjacent layers stacked on top of one another. The fluid particles in the layer closest to a solid surface are subject to the no-slip condition, which states that their velocity must match that of the boundary, resulting in zero relative motion between the fluid and the surface. Since photovoltaic modules remain stationary during operation, the fluid layer in direct contact with their surface has a velocity, $u$, of zero.\vspace{0.5em}
+
+% Boundary layer 
+The stationary fluid layer adjacent to the surface exerts frictional resistance on the fluid layer above it, reducing its velocity through shear interaction between layers moving at different speeds. This process propagates through successive fluid layers, each experiencing a reduction in momentum due to shear from the layer beneath, resulting in a velocity profile that increases with distance from the surface, but at a decreasing rate. At the boundary layer thickness, $\delta$, the plate has negligible effect on the velocity of the fluid. Thus, $\delta$, is typically defined as the distance from the surface where $u = 0.99V$. Therefore, the velocity boundary layer can be defined as the region of flow above the plate, bounded by $\delta$, where the effects of viscous shearing forces are significant.\vspace{0.5em}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Figures/thermal_boundary_layer.pdf}
+    \caption{Thermal boundary layer over a flat plate. \cite{Cengel2014FundamentalsConvection}}
+    \label{fig:thermal_boundary_layer}
+\end{figure}
+
+\textbf{How does the velocity boundary layer impact convection-based cooling methods (aka the rate of convective heat transfer from the photovoltaic module)}\par
 
 \textbf{Explain the Thermal Boundary Layers}\par
 \textbf{How does the thermal boundary layer impact convection-based cooling methods (aka the rate of convective heat transfer from the photovoltaic module)}\vspace{0.5em}
