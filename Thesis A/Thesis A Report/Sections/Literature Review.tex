@@ -204,7 +204,6 @@ Conduction is the transfer of energy from the more energetic particles of a subs
 
 The main conduction-based cooling methods used to reduce photovoltaic module temperatures are finned heat sinks and phase change materials.\vspace{0.5em}
 
-
 % Finned Heat Sinks
 A heat sink is a component used in thermal management strategies to transfer heat effectively. It's design is optimised to dissipate heat. \cite{Kumar2024QualitativeReview} The use of a heat sink increases the cross-sectional area that the heat is being transferred to, denoted as $A$ in Equation \ref{eq:rate_of_heat_conduction_function}. Through further inspection of Equation \ref{eq:rate_of_heat_conduction_function}, it is observed that the increased cross-sectional area, $A$, results in an increased rate of conductive heat transfer, $\dot{Q}_\text{cond}$. A study led by S.N. Razali from the National University of Malaysia investigated the effect of multidirectional tapered fin heat sinks (MTFHS) on photovoltaic modules. Razali et al. found that the proposed MTFHS reduced the module's temperature by $12^\circ \text{C}$, indicating enhanced conductive heat transfer, which consequently improved the photovoltaic module's efficiency by 1.53\% \cite{Razali2023PerformanceMTFHS}.\vspace{0.5em}
 
@@ -236,8 +235,39 @@ Convection is the mode of energy transfer between a solid surface and the adjace
     \label{eq:rate_of_convective_heat_transfer_function}
 \end{equation}
 
-Convection is not a fundamental heat transfer mechanism; rather, it is a combined phenomenon, where heat conduction occurs in the presence of fluid motion. This interaction leads to the formation of velocity and thermal boundary layers at the object's surface. \cite{Cengel2014FundamentalsConvection}
+Convection is not a fundamental heat transfer mechanism; rather, it is a combined phenomenon, where heat conduction occurs in the presence of fluid motion. This interaction leads to the formation of velocity and thermal boundary layers at the object's surface. \cite{Cengel2014FundamentalsConvection}\par
+Convection can be broadly categorised into two types: natural convection, commonly referred to as free convection, and forced convection.\par
 
+\subsubsubsection{Natural Convection and Relevant Cooling Methods}
+Natural convection is the process by which heat transferred to a fluid raises its temperature, reducing its density and generating buoyant forces. These forces cause the warmer, lighter fluid to rise, carrying the absorbed heat to another location where it can be dissipated. \cite{Zohuri2020ThermosyphonApplications}\par
+
+\begin{figure}[ht]
+    % \captionsetup{aboveskip=5pt, belowskip=0pt}
+    \centering
+    \includegraphics[width=0.3\textwidth]{Figures/cooling_of_boiled_egg_natural_convection.pdf}
+    \caption{The cooling of a boiled egg by natural convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
+    \label{fig:cooling_of_boiled_egg_natural_convection}
+\end{figure}
+
+% Natural Convection Velocity Boundary Layer
+
+% Natural Convection Thermal Boundary Layer
+
+% How do boundary layers affect convective heat transfer rate
+
+% RCM: Tilt angle optimization
+
+% RCM: Heat Sink
+
+% RCM: Phase Change Materials with Convection
+
+% A comparison of natural convection and forced convection - why forced convection is better for photovoltaic modules
+\pagebreak
+
+\subsubsubsection{Forced Convection and Relevant Cooling Methods}
+% What is forced convection?
+
+% Forced Convection Velocity Boundary Layer
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.75\linewidth]{Figures/velocity_boundary_layer.pdf}
@@ -253,6 +283,7 @@ The stationary fluid layer adjacent to the surface exerts frictional resistance 
 
 Similar to the velocity boundary layer, a thermal boundary layer is formed when there is a temperature difference between a solid surface and the fluid flowing over it.\par
 
+% Forced Convection Thermal Boundary Layer
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.75\linewidth]{Figures/thermal_boundary_layer.pdf}
@@ -260,47 +291,27 @@ Similar to the velocity boundary layer, a thermal boundary layer is formed when 
     \label{fig:thermal_boundary_layer}
 \end{figure}
 
-Figure \ref{fig:thermal_boundary_layer} shows the temperature profile that results due to the flow of parallel fluid over a flat plate.\par
-Given the focus on cooling photovoltaic module temperatures, it is appropriate to illustrate a thermal boundary layer diagram where the plate surface is at a higher temperature than the surrounding fluid.\vspace{0.5em}
+Figure \ref{fig:thermal_boundary_layer} shows the temperature profile that results due to the flow of parallel fluid over a flat plate. Given the focus on cooling photovoltaic module temperatures, it is appropriate to illustrate a thermal boundary layer diagram where the plate surface is at a higher temperature than the surrounding fluid.\vspace{0.5em}
 
-The temperature of the fluid particles adjacent to the surface of the plate reach thermal equilibrium with the temperature of the plate itself, attaining a temperature of $T_s$.\par
-This fluid layer transfers energy to the layer directly above it, resulting in a temperature gradient where each successive layer has a slightly lower temperature than the previous one, with the rate of decrease diminishing progressively.\vspace{0.5em}
+The fluid particles adjacent to the surface of the plate reach thermal equilibrium with the plate, adopting a temperature, $T_s$. This fluid layer transfers energy to the layer directly above it, resulting in a temperature gradient where each successive layer has a slightly lower temperature than the previous one, with the rate of decrease diminishing progressively. The boundary layer thickness, $\delta_t$, represents the perpendicular distance from the flat plate at which the influence of the plate's temperature, $T_s$, on the fluid temperature, $T_\infty$, becomes negligible. Thus, the thickness of the thermal boundary layer at any location on the surface occurs when $T = T_s-0.99(T_s-T_\infty)$. Therefore, the thermal boundary layer is defined as the flow region above the surface, bounded by $\delta_t$, where the temperature variation in the direction normal to the surface is significant.\vspace{0.5em}
 
-The boundary layer thickness, $\delta_t$, represents the perpendicular distance from the flat plate at which the influence of the plate's temperature, $T_s$, on the fluid temperature, $T_\infty$, becomes negligible.\par
-Thus, the thickness of the thermal boundary layer at any location on the surface occurs when $T = T_s-0.99(T_s-T_\infty)$.\par
+% Reiterate why boundary layers are important to convective heat transfer
 
-Therefore, the thermal boundary layer is defined as the flow region above the surface, bounded by $\delta_t$, where the temperature variation in the direction normal to the surface is significant.\par
+% RCM: Air
 
-\vspace{0.5em}
+% RCM: Water
 
-\textbf{How does the thermal and velocity boundary layer impact convection-based cooling methods (aka the rate of convective heat transfer from the photovoltaic module)}\vspace{0.5em}
+% RCM: Nano-fluid
 
-Laminar vs Turbulent Flow\par
-\begin{itemize}
-    \item What is laminar flow?
-    \item What is turbulent flow?
-    \item Which is a photovoltaic module subject to?
-    \item How is it important?
-\end{itemize}
+% RCM: Vortex-generators (leads on to the Vortex generator section of the report)
 
-Convection can be classified into two main modes: natural convection and forced convection. \cite{Cengel2014IntroductionConcepts}
-
-\subsubsubsection{Convection-Based Cooling Methods}
-Natural convection occurs if the fluid motion is caused by buoyancy forces that are induced by density differences due to the variation of temperature in the fluid, shown in Figure \ref{fig:cooling_of_boiled_egg_natural_convection}.
-
-\begin{figure}[ht]
-    % \captionsetup{aboveskip=5pt, belowskip=0pt}
-    \centering
-    \includegraphics[width=0.3\textwidth]{Figures/cooling_of_boiled_egg_natural_convection.pdf}
-    \caption{The cooling of a boiled egg by natural convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
-    \label{fig:cooling_of_boiled_egg_natural_convection}
-\end{figure}
-
-How does the inclination of the angle affect the natural convection (vertical plates vs horizontal plates from Charitha's lecture)\par
-What are some relevant cooling methods??\par
-
-\subsubsubsection{Natural Convection vs Forced Convection}
-Make sure you get opinions on this first\par
+% Laminar vs Turbulent Flow\par
+% \begin{itemize}
+%     \item What is laminar flow?
+%     \item What is turbulent flow?
+%     \item Which is a photovoltaic module subject to?
+%     \item How is it important?
+% \end{itemize}
 
 \subsubsection{Vortex Generators: Vortex Induced Heat Induction} % How are vortices used to induce heat induction
 \begin{itemize}
@@ -319,6 +330,7 @@ Make sure you get opinions on this first\par
 
 \pagebreak
 \subsection{Literature Gap}
+\subsection{}
 
 \pagebreak
 
@@ -329,23 +341,6 @@ Make sure you get opinions on this first\par
 %     \item Are there any drawbacks of vortex-induced heat transfer? If so, what are they?
 % \end{itemize}
 
-% \subsubsection{Conduction}
-% \begin{itemize}
-%     \item What is conduction?
-%     \item How can conduction be used to enhance heat transfer?
-%     \item What are some examples of this principle in practice?
-%     \item What were the results of this practice?
-%     \item Are there any drawbacks of conduction as a method to enhance heat transfer?
-% \end{itemize}
-
-% \subsubsection{Radiation}
-% \begin{itemize}
-%     \item What is radiation?
-%     \item How can radiation be used to enhance heat transfer?
-%     \item What are some examples of this principle in practice?
-%     \item What were the results of this practice?
-%     \item Are there any drawbacks of radiation as a method to enhance heat transfer?
-% \end{itemize}
 
 % \subsection{Convective Photovoltaic Module Cooling Methods}
 % \begin{itemize}
