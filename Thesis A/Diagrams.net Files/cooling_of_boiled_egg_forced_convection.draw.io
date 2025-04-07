@@ -14,7 +14,7 @@
           <mxGeometry x="630" y="230" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="nAfD6s4qFtVshBjyx8mS-25" value="Forced Convection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="630" y="150" width="60" height="30" as="geometry" />
+          <mxGeometry x="605" y="150" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tHAMeXkoA72G0ttEtpWt-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="530" y="270" width="10" height="50" as="geometry" />
