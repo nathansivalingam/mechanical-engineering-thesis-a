@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.8">
   <diagram id="isJ9_etKxryIBF6rrnlm" name="Page-2">
-    <mxGraphModel dx="390" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="796" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -12,9 +12,6 @@
         </mxCell>
         <mxCell id="nAfD6s4qFtVshBjyx8mS-4" value="Air" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="630" y="230" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="nAfD6s4qFtVshBjyx8mS-25" value="Forced Convection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="605" y="190" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tHAMeXkoA72G0ttEtpWt-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="530" y="270" width="10" height="50" as="geometry" />
