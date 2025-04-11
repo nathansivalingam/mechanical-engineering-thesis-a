@@ -298,9 +298,25 @@ Moreover, Equation \ref{eq:convective_heat_transfer_coefficient} reveals that an
 
 Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher natural convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem's experimental findings.\vspace{0.5em}
 
+% When to consider natural convection
 \textbf{When to consider natural convection}\par
+The Reynolds number is the ratio of inertial forces to viscous forces in a fluid.
 
+\begin{equation}
+    \text{Re} = \frac{\rho V L_c}{\mu}
+    \label{eq:reynolds_number_function}
+\end{equation}
 
+The Grashof number is the ratio of buoyant forces to viscous forces in a fluid.
+
+\begin{equation}
+    \text{Gr}_L = \frac{g \beta (T_s - T_\infty) L_c^3}{\nu^2}
+    \label{eq:grashof_number_function}
+\end{equation}
+
+If $(\text{Gr}_L \text{ / } \text{Re}_L^2) << 1$, natural convection can be neglected.\par
+
+\pagebreak
 \subsubsubsection{Forced Convection and Relevant Cooling Methods}
 % What is forced convection?
 
