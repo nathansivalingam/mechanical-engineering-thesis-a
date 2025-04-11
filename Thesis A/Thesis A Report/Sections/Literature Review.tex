@@ -254,9 +254,36 @@ Natural convection is the process by which heat transferred to a fluid raises it
 
 % Natural Convection Thermal Boundary Layer
 
+
 % How do boundary layers affect convective heat transfer rate
 
+
 % RCM: Tilt angle optimization
+A 2021 study led by A. Abdulmunem from the University of Malaya, Malaysia, investigated the impact of tilt angle on the performance of photovoltaic systems. Abdulmunem et al. observed that as the tilt angle increased from $0^\circ$ (horizontal) to $90^\circ$ (vertical), the temperature reduction in the photovoltaic cell increased from $-0.4\%$ at $0^\circ$ to $-12\%$ at $90^\circ$. This trend was attributed to enhanced convective heat transfer. Consequently, Abdulmunem et al. concluded that increasing the tilt angle of the photovoltaic module away from the horizontal axis and towards the vertical axis improves the rate of convective heat transfer. \cite{Abdulmunem2021NumericalSink}\vspace{0.5em}
+
+Abdulmunem's findings are supported by theoretical calculations as well.\par
+The Rayleigh number, Ra, which can be calculated using Equation \ref{eq:rayleigh_number_function}, is the ratio of buoyancy forces and (the products of) thermal and momentum diffusivities.\par
+\begin{equation}
+    \text{Ra}_L = \frac{g\beta(T_s-T_\infty)L_c^3}{\nu\alpha}
+    \label{eq:rayleigh_number_function}
+\end{equation}
+
+As the tilt angle increases, 
+
+For simple empirical correlations, the average Nusselt number, Nu, can be calculated using Equation \ref{eq:avg_nusselt_number_natural_convection}.
+\begin{equation}
+    \text{Nu} = \frac{hL_c}{k} = C(\text{Gr}_L\text{Pr})^n = C\text{Ra}_L^n
+    \label{eq:avg_nusselt_number_natural_convection}
+\end{equation}
+
+
+
+- $\theta$ goes up
+- $Ra$ goes up
+- $Nu$ goes up
+- $h$ goes up
+- $\dot{Q}$ goes up
+
 \begin{itemize}
     \item Show the natural convection currents that occur for a horizontal hot plate.
     \item Show the natural convection currents that occur for a hot plate at angle, $theta$.
@@ -264,22 +291,25 @@ Natural convection is the process by which heat transferred to a fluid raises it
     \item Cite a study that determined the ideal angle for free convective heat transfer.
 \end{itemize}
 
-The angle of tilt of a photovoltaic module significantly affects natural convective heat transfer.\par
-Lower tilt angles observe weaker natural convection because the boundary layer of hot air tends to stay on the surface longer.\par
-Furthermore, there is less air circulation which means that less heat is being removed so the panel can get hotter.\par
+- The angle of tilt of a photovoltaic module significantly affects natural convective heat transfer.\par
+- Lower tilt angles observe weaker natural convection because the boundary layer of hot air tends to stay on the surface longer.\par
+- Furthermore, there is less air circulation which means that less heat is being removed so the panel can get hotter.\par
 
-With steeper tilt angles, there is stronger bouyancy-driven flow.\par
-Hot air rises more freely along the panel's surface.\par
-Enahnced airflow leads to more effective cooling through convection.\par
+- With steeper tilt angles, there is stronger bouyancy-driven flow.\par
+- Hot air rises more freely along the panel's surface.\par
+- Enhanced airflow leads to more effective cooling through convection.\par
 
-Mathematically, an increase in $Nu$ due to tilt, facilitates better heat transfer, shown through an increase in the convective heat transfer coefficient.\par
+- Mathematically, an increase in $Nu$ due to tilt, facilitates better heat transfer, shown through an increase in the convective heat transfer coefficient.\par
 
-Most photovoltaic modules are positioned at an angle of about [INSERT ANGLE HERE] due to them being mainly placed on roofs which have an angle.\par
+- Most photovoltaic modules are positioned at an angle of about [INSERT ANGLE HERE] due to them being mainly placed on roofs which have an angle.\par
 
 \begin{equation}
     h = \frac{Nu \times k}{L}
     \label{convective_heat_transfer_coefficient}
 \end{equation}
+
+
+\textbf{When to consider natural convection?}
 
 % RCM: Heat Sink
 
