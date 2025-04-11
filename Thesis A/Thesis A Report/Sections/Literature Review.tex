@@ -235,15 +235,14 @@ Convection is the mode of energy transfer between a solid surface and the adjace
     \label{eq:rate_of_convective_heat_transfer_function}
 \end{equation}
 
-Convection is not a fundamental heat transfer mechanism; rather, it is a combined phenomenon, where heat conduction occurs in the presence of fluid motion. Convection can be broadly categorised into two types: natural convection, commonly referred to as free convection, and forced convection. \cite{Cengel2014FundamentalsConvection}
+Convection is not a fundamental heat transfer mechanism; rather, it is a combined phenomenon, where heat conduction occurs in the presence of fluid motion. Convection can be broadly categorised into two types: natural convection, also referred to as free convection, and forced convection. \cite{Cengel2014FundamentalsConvection}
 
 \subsubsubsection{Natural Convection and Relevant Cooling Methods}
-Natural convection is the process by which heat transferred to a fluid raises its temperature, reducing its density and generating buoyant forces. These forces cause the warmer, lighter fluid to rise, carrying the absorbed heat to another location where it can be dissipated. \cite{Zohuri2020ThermosyphonApplications} An example of natural convection is shown in Figure \ref{fig:cooling_of_boiled_egg_natural_convection}.
+Natural convection is the process by which heat transferred to a fluid raises its temperature, reducing its density and generating buoyant forces. These forces cause the warmer, lighter fluid to rise, carrying the absorbed heat to another location where it can be dissipated. \cite{Zohuri2020ThermosyphonApplications} Figure \ref{fig:cooling_of_boiled_egg_natural_convection} illustrates natural convective heat transfer in the context of cooling a hot egg.
 
 \begin{figure}[ht]
-    % \captionsetup{aboveskip=5pt, belowskip=0pt}
     \centering
-    \includegraphics[width=0.5\textwidth]{Figures/cooling_of_boiled_egg_natural_convection.pdf}
+    \includegraphics[width=0.5\textwidth, trim=0 10 0 10, clip]{Figures/cooling_of_boiled_egg_natural_convection.pdf}
     \caption{The cooling of a boiled egg by natural convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
     \label{fig:cooling_of_boiled_egg_natural_convection}
 \end{figure}
@@ -258,7 +257,7 @@ Natural convection is the process by which heat transferred to a fluid raises it
 
 
 % RCM: Tilt angle optimization
-A 2021 study led by A. Abdulmunem from the University of Malaya, Malaysia, investigated the impact of tilt angle on the performance of photovoltaic systems. Abdulmunem et al. observed that as the tilt angle increased from $0^\circ$ (horizontal) to $90^\circ$ (vertical), the temperature reduction in the photovoltaic cell increased from $-0.4\%$ at $0^\circ$ to $-12\%$ at $90^\circ$. This trend was attributed to enhanced convective heat transfer. Consequently, Abdulmunem et al. concluded that increasing the tilt angle of the photovoltaic module away from the horizontal axis and towards the vertical axis improves the rate of convective heat transfer. \cite{Abdulmunem2021NumericalSink}\vspace{0.5em}
+A 2021 study led by A. Abdulmunem from the University of Malaya, Malaysia, investigated the impact of tilt angle on the performance of photovoltaic systems. Abdulmunem et al. observed that as the tilt angle increased from $0^\circ$ (horizontal) to $90^\circ$ (vertical), the temperature reduction in the photovoltaic cell increased from $-0.4\%$ to $-12\%$. This trend was attributed to enhanced convective heat transfer. Consequently, Abdulmunem et al. concluded that increasing the tilt angle of the photovoltaic module away from the horizontal axis and towards the vertical axis improves the rate of convective heat transfer. \cite{Abdulmunem2021NumericalSink}\vspace{0.5em}
 
 Abdulmunem's conclusion is also in excellent agreement with the theoretical relationship between the photovoltaic module's tilt angle and the natural convective heat trasfer rate. The Rayleigh number, $\text{Ra}_L$, which can be calculated using Equation \ref{eq:rayleigh_number_function}, is the ratio of buoyancy forces and (the products of) thermal and momentum diffusivities. \cite{Cengel2014NaturalConvection}.
 
@@ -269,7 +268,7 @@ Abdulmunem's conclusion is also in excellent agreement with the theoretical rela
 
 For an inclined photovoltaic module between $0^\circ$ and $60^\circ$, the gravitational force, $g$, is replaced with $g\,\sin(\theta)$, where $\theta$ represents the tilt angle between the horizontal axis and the photovoltaic module, shown in Figure \ref{fig:inclined_plate}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth, trim=0 20 0 20, clip]{Figures/inclined_plate.pdf}
     \caption{Inclined photovoltaic module. Adapted from \cite{Cengel2014NaturalConvection}}
@@ -283,9 +282,9 @@ The Rayleigh number for a tilted photovoltaic module, $\text{Ra}_\theta$, is sho
     \label{eq:rayleigh_number_tilted_function}
 \end{equation}
 
-A casual inspection of Equation \ref{eq:rayleigh_number_tilted_function} reveals a directly proportional relationship between the tilt angle, $\theta$, and the Rayleigh number for a tilted photovoltaic module, $\text{Ra}_\theta$, in the bounds of $0^\circ$ and $60^\circ$ \cite{Cengel2014NaturalConvection}. Thus, an increase in the tilt angle corresponds to an increase in the Rayleigh number.\vspace{0.5em}
+A casual inspection of Equation \ref{eq:rayleigh_number_tilted_function} indicates that the Rayleigh number for a tilted photovoltaic module, $\text{Ra}_\theta$, is directly proportional to the tilt angle, $\theta$, within the range of $0^\circ$ to $60^\circ$ \cite{Cengel2014NaturalConvection}. Therefore, increasing the tilt angle within this range results in a corresponding increase in the Rayleigh number.\vspace{0.5em}
 
-The Nusselt number, $\text{Nu}$, is the ratio of convective to conductive heat transfer. For simple empirical correlations in natural convection, an exponential relationship exists between the average Nusselt number, $\text{Nu}$, and the Rayleigh number, shown in Equation \ref{eq:avg_nusselt_number_natural_convection} \cite{Cengel2014NaturalConvection}.
+The Nusselt number, $\text{Nu}$, is the ratio of convective to conductive heat transfer. \cite{Basu2019MassMeter} For simple empirical correlations in natural convection, an exponential relationship exists between the average Nusselt number, $\text{Nu}$, and the relevant Rayleigh number, shown in Equation \ref{eq:avg_nusselt_number_natural_convection} \cite{Cengel2014NaturalConvection}.
 
 \begin{equation}
     \text{Nu} = C\,\text{Ra}_\theta^n
@@ -300,10 +299,7 @@ Moreover, Equation \ref{eq:convective_heat_transfer_coefficient} reveals that an
     \label{eq:convective_heat_transfer_coefficient}
 \end{equation}
 
-Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, leads to an increase in natural convective heat transfer rate, $\dot{Q}_\text{conv}$.\vspace{0.5em}
-
-
-- Most photovoltaic modules are positioned at an angle of about [INSERT ANGLE HERE] due to them being mainly placed on roofs which have an angle.\par
+Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher natural convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem's experimental findings.\vspace{0.5em}
 
 \textbf{When to consider natural convection?}
 
