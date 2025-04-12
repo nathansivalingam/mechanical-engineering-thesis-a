@@ -228,7 +228,7 @@ In 2018, a study led by B. Zhao from the University of Science and Technology of
 % Limitations of Radiation Based Cooling Methods
 
 \subsubsection{Convection}
-\textit{\textbf{I am unsure where to put laminar and turbulent flow}}\vspace{0.5em}
+\textit{\textbf{I am unsure where to put laminar and turbulent flow}}\par
 Convection is the mode of energy transfer between a solid surface and the adjacent liquid or gas that is in motion. The formula commonly used to calculate the rate of convective heat transfer can be expressed by Newton's law of cooling, shown in Equation \ref{eq:rate_of_convective_heat_transfer_function}. \cite{Cengel2014IntroductionConcepts}
 
 \begin{equation}
@@ -249,7 +249,6 @@ Natural convection is the process by which heat transferred to a fluid raises it
 \end{figure}
 
 % RCM: Tilt angle optimization
-\textbf{Tilt angle optimisation}\par
 The tilt angle of a photovoltaic module significantly influences natural convective heat transfer, as it alters the buoyancy-driven airflow around the module’s surface.\vspace{0.5em}
 
 \textit{\textbf{Talk about free convection boundary layers here}}\vspace{0.5em}
@@ -288,35 +287,18 @@ The Nusselt number, $\text{Nu}$, is the ratio of convective to conductive heat t
     \label{eq:avg_nusselt_number_natural_convection}
 \end{equation}
 
-Therefore, the increase in the Rayleigh number leads to an increase in the Nusselt number.\vspace{0.5em}
-
-Moreover, Equation \ref{eq:convective_heat_transfer_coefficient} reveals that an increase in the Nusselt number, $\text{Nu}$, causes an increase in the convective heat transfer coefficient, $h$. \cite{Cengel2014NaturalConvection}.
+Therefore, the increase in the Rayleigh number leads to an increase in the Nusselt number. Moreover, Equation \ref{eq:convective_heat_transfer_coefficient} reveals that an increase in the Nusselt number, $\text{Nu}$, causes an increase in the convective heat transfer coefficient, $h$. \cite{Cengel2014NaturalConvection}.
 \begin{equation}
     h = \frac{\text{Nu} \times k}{L_c}
     \label{eq:convective_heat_transfer_coefficient}
 \end{equation}
 
-Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher natural convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem's experimental findings.\vspace{0.5em}
+Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher natural convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem et al.'s experimental findings.\vspace{0.5em}
 
-% When to consider natural convection
-\textbf{When to consider natural convection}\par
-The Reynolds number is the ratio of inertial forces to viscous forces in a fluid.
+However, while a vertical photovoltaic module improves natural convective heat transfer, it limits the surface area that is directly exposed to the sun, reducing power output. Thus, a tilt angle of $45^\circ$ from the horizontal axis (as in earlier NOCT testing \cite{InternationalElectrotechnicalCommission2005IECApproval}) is generally used in photovoltaic module testing because it represents more realistic conditions.\par
 
-\begin{equation}
-    \text{Re} = \frac{\rho V L_c}{\mu}
-    \label{eq:reynolds_number_function}
-\end{equation}
+Natural convection-based cooling methods can be effective tools for reducing an object's temperature. In the context of photovoltaic modules, however, forced convection has been shown to be significantly more efficient at facilitating heat transfer from the module to its surroundings. A 2021 study led by A. Almuwailhi from King Saud University investigated the impact of both natural and forced convection cooling methods on the efficiency of photovoltaic modules. To promote natural convective heat transfer, Almuwailhi's team experimented with different channel air gaps behind the module. The most promising configuration featured an air gap of $120$ mm, which led to a $1.2\%$ increase in photovoltaic module efficiency. For forced convection, the researchers used airflow velocities of $2$ m/s and $3$ m/s. The results demonstrated a $3.8\%$ increase in efficiency with $2$ m/s airflow, and a $4\%$ increase with $3$ m/s airflow. \cite{Almuwailhi2023InvestigatingRiyadh} Therefore, this thesis will focus on forced convection based cooling methods.
 
-The Grashof number is the ratio of buoyant forces to viscous forces in a fluid.
-
-\begin{equation}
-    \text{Gr}_L = \frac{g \beta (T_s - T_\infty) L_c^3}{\nu^2}
-    \label{eq:grashof_number_function}
-\end{equation}
-
-If $(\text{Gr}_L \text{ / } \text{Re}_L^2) << 1$, natural convection can be neglected.\par
-
-\pagebreak
 \subsubsubsection{Forced Convection and Relevant Cooling Methods}
 % What is forced convection?
 
@@ -365,6 +347,7 @@ The fluid particles adjacent to the surface of the plate reach thermal equilibri
 % RCM: Nano-fluid
 
 % RCM: Vortex-generators (leads on to the Vortex generator section of the report)
+% WHY SHOULD WE FOCUS ON VGs
 
 \subsubsection{Vortex Generators: Vortex Induced Heat Transfer} % How are vortices used to induce heat transfer
 \begin{itemize}
