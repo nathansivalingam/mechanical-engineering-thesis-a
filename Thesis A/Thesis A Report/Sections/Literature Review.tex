@@ -300,7 +300,8 @@ However, while a vertical photovoltaic module improves natural convective heat t
 Natural convection-based cooling methods can be effective tools for reducing an object's temperature. In the context of photovoltaic modules, however, forced convection has been shown to be significantly more efficient at facilitating heat transfer from the module to its surroundings. A 2021 study led by A. Almuwailhi from King Saud University investigated the impact of both natural and forced convection cooling methods on the efficiency of photovoltaic modules. To promote natural convective heat transfer, Almuwailhi's team experimented with different channel air gaps behind the module. The most promising configuration featured an air gap of $120$ mm, which led to a $1.2\%$ increase in photovoltaic module efficiency. For forced convection, the researchers used airflow velocities of $2$ m/s and $3$ m/s. The results demonstrated a $3.8\%$ increase in efficiency with $2$ m/s airflow, and a $4\%$ increase with $3$ m/s airflow. \cite{Almuwailhi2023InvestigatingRiyadh} Therefore, this thesis will focus on forced convection based cooling methods.
 
 \subsubsubsection{Forced Convection and Relevant Cooling Methods}
-% What is forced convection?
+Forced convection refers to a form of heat transfer in which fluid flow over a surface is driven by external mechanisms such as a fan, pump, or wind, rather than by natural buoyancy forces. \cite{Cengel2014IntroductionConcepts}\par
+Figure \ref{fig:cooling_of_boiled_egg_forced_convection} demonstrates how forced convective heat transfer can be used to cool a hot egg.\par
 
 \begin{figure}[ht]
     % \captionsetup{aboveskip=5pt, belowskip=0pt}
@@ -309,6 +310,15 @@ Natural convection-based cooling methods can be effective tools for reducing an 
     \caption{The cooling of a boiled egg by forced convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
     \label{fig:cooling_of_boiled_egg_forced_convection}
 \end{figure}
+
+% RCM: Air
+
+% RCM: Water
+
+% RCM: Nano-fluid
+
+% RCM: Vortex-generators (leads on to the Vortex generator section of the report)
+% WHY SHOULD WE FOCUS ON VGs
 
 % Forced Convection Velocity Boundary Layer
 \begin{figure}[ht]
@@ -339,15 +349,6 @@ Figure \ref{fig:thermal_boundary_layer} shows the temperature profile that resul
 The fluid particles adjacent to the surface of the plate reach thermal equilibrium with the plate, adopting a temperature, $T_s$. This fluid layer transfers energy to the layer directly above it, resulting in a temperature gradient where each successive layer has a slightly lower temperature than the previous one, with the rate of decrease diminishing progressively. The boundary layer thickness, $\delta_t$, represents the perpendicular distance from the flat plate at which the influence of the plate's temperature, $T_s$, on the fluid temperature, $T_\infty$, becomes negligible. Thus, the thickness of the thermal boundary layer at any location on the surface occurs when $T = T_s-0.99(T_s-T_\infty)$. Therefore, the thermal boundary layer is defined as the flow region above the surface, bounded by $\delta_t$, where the temperature variation in the direction normal to the surface is significant.\vspace{0.5em}
 
 % Reiterate why boundary layers are important to convective heat transfer
-
-% RCM: Air
-
-% RCM: Water
-
-% RCM: Nano-fluid
-
-% RCM: Vortex-generators (leads on to the Vortex generator section of the report)
-% WHY SHOULD WE FOCUS ON VGs
 
 \subsubsection{Vortex Generators: Vortex Induced Heat Transfer} % How are vortices used to induce heat transfer
 \begin{itemize}
