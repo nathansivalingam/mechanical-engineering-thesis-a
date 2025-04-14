@@ -303,32 +303,16 @@ Natural convection-based cooling methods can be effective tools for reducing an 
 Forced convection is a mode of heat transfer in which fluid flow over a surface is induced by external means such as a fan, pump, or wind, rather than resulting from natural buoyancy forces. \cite{Cengel2014IntroductionConcepts} Figure \ref{fig:cooling_of_boiled_egg_forced_convection} illustrates how forced convective heat transfer can be applied to cool a hot egg.\par
 
 \begin{figure}[ht]
-    % \captionsetup{aboveskip=5pt, belowskip=0pt}
     \centering
     \includegraphics[width=0.5\textwidth]{Figures/cooling_of_boiled_egg_forced_convection.pdf}
     \caption{The cooling of a boiled egg by forced convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
     \label{fig:cooling_of_boiled_egg_forced_convection}
 \end{figure}
 
-- Explain a little bit more about forced convection and when you might consider natural convection, etc. (E.g., the relationship between the Reynold's number and the Grashof number.\par
+% - Explain a little bit more about forced convection and when you might consider natural convection, etc. (E.g., the relationship between the Reynold's number and the Grashof number.\vspace{0.5em}
 
-% RCM: Air
-- Air is commonly used as a method of forced convection.\par
-- Example Study\par
+Similar to natural convection, forced convection involves the development of velocity and thermal boundary layers that control momentum and heat transfer in the vicinity of the surface.\par
 
-% RCM: Water
-- Example Study\par
-
-% RCM: Nano-fluid
-- Example Study\par
-
-% RCM: Vortex-generators (leads on to the Vortex generator section of the report)
-- An overview of how vortex generators work.\par
-- Explain why they can be a very useful tool for forced convective heat transfer.\par
-- Example study.\par
-- Lead into the next section.\par
-
-\pagebreak
 % Forced Convection Velocity Boundary Layer
 \begin{figure}[ht]
     \centering
@@ -338,12 +322,10 @@ Forced convection is a mode of heat transfer in which fluid flow over a surface 
 \end{figure}
 
 % No slip condition
-Figure \ref{fig:velocity_boundary_layer} illustrates the velocity profile caused by parallel fluid flow over a flat plate. To understand this velocity profile, the fluid is modelled as a series of adjacent layers stacked on top of one another. The fluid particles in the layer closest to a solid surface are subject to the no-slip condition, which states that their velocity must match that of the boundary, resulting in zero relative motion between the fluid and the surface. Since photovoltaic modules remain stationary during operation, the fluid layer in direct contact with their surface has a velocity, $u$, of zero.\vspace{0.5em}
+Figure \ref{fig:velocity_boundary_layer} illustrates the velocity profile caused by parallel fluid flow over a flat plate. To understand this velocity profile, the fluid is modelled as a series of adjacent layers stacked on top of one another. The fluid particles in the layer closest to a solid surface are subject to the no-slip condition, which states that their velocity must match that of the boundary, resulting in zero relative motion between the fluid and the surface. Since photovoltaic modules remain stationary during operation, the fluid layer in direct contact with their surface has a velocity, $u$, of zero. \cite{Cengel2014FundamentalsConvection}\vspace{0.5em}
 
 % Boundary layer 
-The stationary fluid layer adjacent to the surface exerts frictional resistance on the fluid layer above it, reducing its velocity through shear interaction between layers moving at different speeds. This process propagates through successive fluid layers, each experiencing a reduction in momentum due to shear from the layer beneath, resulting in a velocity profile that increases with distance from the surface, but at a decreasing rate. At the boundary layer thickness, $\delta$, the plate has negligible effect on the velocity of the fluid. Thus, $\delta$, is typically defined as the distance from the surface where $u = 0.99V$. Therefore, the velocity boundary layer can be defined as the region of flow above the plate, bounded by $\delta$, where the effects of viscous shearing forces are significant.\vspace{0.5em}
-
-Similar to the velocity boundary layer, a thermal boundary layer is formed when there is a temperature difference between a solid surface and the fluid flowing over it.\par
+The stationary fluid layer adjacent to the surface exerts frictional resistance on the fluid layer above it, reducing its velocity through shear interaction between layers moving at different speeds. This process propagates through successive fluid layers, each experiencing a reduction in momentum due to shear from the layer beneath, resulting in a velocity profile that increases with distance from the surface, but at a decreasing rate. At the boundary layer thickness, $\delta$, the plate has negligible effect on the velocity of the fluid. Thus, $\delta$, is typically defined as the distance from the surface where $u = 0.99V$. Therefore, the velocity boundary layer can be defined as the region of flow above the plate, bounded by $\delta$, where the effects of viscous shearing forces are significant. \cite{Cengel2014FundamentalsConvection}\vspace{0.5em}
 
 % Forced Convection Thermal Boundary Layer
 \begin{figure}[ht]
@@ -353,9 +335,48 @@ Similar to the velocity boundary layer, a thermal boundary layer is formed when 
     \label{fig:thermal_boundary_layer}
 \end{figure}
 
-Figure \ref{fig:thermal_boundary_layer} shows the temperature profile that results due to the flow of parallel fluid over a flat plate. Given the focus on cooling photovoltaic module temperatures, it is appropriate to illustrate a thermal boundary layer diagram where the plate surface is at a higher temperature than the surrounding fluid.\vspace{0.5em}
+Figure \ref{fig:thermal_boundary_layer} shows the temperature profile that results due to the flow of parallel fluid over a flat plate. Given the focus on reducing photovoltaic module temperature, it is appropriate to illustrate a thermal boundary layer diagram where the plate surface is at a higher temperature than the surrounding fluid.\vspace{0.5em}
 
-The fluid particles adjacent to the surface of the plate reach thermal equilibrium with the plate, adopting a temperature, $T_s$. This fluid layer transfers energy to the layer directly above it, resulting in a temperature gradient where each successive layer has a slightly lower temperature than the previous one, with the rate of decrease diminishing progressively. The boundary layer thickness, $\delta_t$, represents the perpendicular distance from the flat plate at which the influence of the plate's temperature, $T_s$, on the fluid temperature, $T_\infty$, becomes negligible. Thus, the thickness of the thermal boundary layer at any location on the surface occurs when $T = T_s-0.99(T_s-T_\infty)$. Therefore, the thermal boundary layer is defined as the flow region above the surface, bounded by $\delta_t$, where the temperature variation in the direction normal to the surface is significant.\vspace{0.5em}
+The fluid particles adjacent to the surface of the plate reach thermal equilibrium with the plate, adopting a temperature, $T_s$. This fluid layer transfers energy to the layer directly above it, resulting in a temperature gradient where each successive layer has a slightly lower temperature than the previous one, with the rate of decrease diminishing progressively. The boundary layer thickness, $\delta_t$, represents the perpendicular distance from the flat plate at which the influence of the plate's temperature, $T_s$, on the fluid temperature, $T_\infty$, becomes negligible. Thus, the thickness of the thermal boundary layer at any location on the surface occurs when $T = T_s-0.99(T_s-T_\infty)$. Therefore, the thermal boundary layer is defined as the flow region above the surface, bounded by $\delta_t$, where the temperature variation in the direction normal to the surface is significant. \cite{Cengel2014FundamentalsConvection}\vspace{0.5em}
+
+The convective heat transfer coefficient, $h$, is inversely proportional to the thermal boundary layer thickness, $\delta_t$. Therefore, a thinner $\delta_t$ enhances forced convective heat transfer.\vspace{0.5em}
+
+% RCM: Air
+In 2024, a study led by I. Al-Masalha from AlBalqa Applied University focused on improving the efficiency of photovoltaic modules using water sprinklers, air fans, and combined cooling systems. One of the methods explored involved using air fans to direct airflow over the surface of the modules. As a result, the temperature of the modules decreased by $6\%$ to $26\%$, as shown in Figure \ref{fig:air_cooling_temperature_graph}. This reduction in temperature led to an efficiency increase of $0.44\%$ to $1.45\%$, illustrated in Figure \ref{fig:air_cooling_efficiency_graph}. \cite{Al-Masalha2024ImprovingSystems}\vspace{0.5em}
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/air_cooling_temperature_graph.pdf}
+        \caption{Comparison of PV temperature when using air cooling over time. \cite{Al-Masalha2024ImprovingSystems}}
+        \label{fig:air_cooling_temperature_graph}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/air_cooling_efficiency_graph.pdf}
+        \caption{Comparison of efficiency when using air cooling over time. \cite{Al-Masalha2024ImprovingSystems}}
+        \label{fig:air_cooling_efficiency_graph}
+    \end{minipage}
+\end{figure}
+
+% RCM: Water
+- Example Study\par
+
+% RCM: Combined Cooling System
+- Example Study
+
+% Explain why air is superior and then talk about VGs
+
+% RCM: Nano-fluid (NOT SURE WHERE TO PUT THIS YET)
+- Example Study\par
+
+% RCM: Vortex-generators (leads on to the Vortex generator section of the report)
+- An overview of how vortex generators work.\par
+- Explain why they can be a very useful tool for forced convective heat transfer.\par
+- Example study.\par
+- Lead into the next section.\par
 
 % Reiterate why boundary layers are important to convective heat transfer
 
