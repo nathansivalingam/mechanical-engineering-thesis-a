@@ -228,7 +228,7 @@ In 2018, a study led by B. Zhao from the University of Science and Technology of
 % Limitations of Radiation Based Cooling Methods
 
 \subsubsection{Convection}
-\textit{\textbf{I am unsure where to put laminar and turbulent flow}}\par
+% \textit{\textbf{I am unsure where to put laminar and turbulent flow}}\par
 Convection is the mode of energy transfer between a solid surface and the adjacent liquid or gas that is in motion. The formula commonly used to calculate the rate of convective heat transfer can be expressed by Newton's law of cooling, shown in Equation \ref{eq:rate_of_convective_heat_transfer_function}. \cite{Cengel2014IntroductionConcepts}
 
 \begin{equation}
@@ -251,7 +251,7 @@ Natural convection is the process by which heat transferred to a fluid raises it
 % RCM: Tilt angle optimization
 The tilt angle of a photovoltaic module significantly influences natural convective heat transfer, as it alters the buoyancy-driven airflow around the module’s surface.\vspace{0.5em}
 
-\textit{\textbf{Talk about free convection boundary layers here}}\vspace{0.5em}
+% \textit{\textbf{Talk about free convection boundary layers here}}\vspace{0.5em}
 
 A 2021 study led by A. Abdulmunem from the University of Malaya, Malaysia, investigated the impact of tilt angle on the performance of photovoltaic systems. Abdulmunem et al. observed that as the tilt angle increased from $0^\circ$ (horizontal) to $90^\circ$ (vertical), the temperature reduction in the photovoltaic cell increased from $-0.4\%$ to $-12\%$. This trend was attributed to enhanced convective heat transfer. Consequently, Abdulmunem et al. concluded that increasing the tilt angle of the photovoltaic module away from the horizontal axis and towards the vertical axis improves the rate of convective heat transfer. \cite{Abdulmunem2021NumericalSink}\vspace{0.5em}
 
@@ -316,7 +316,7 @@ Similar to natural convection, forced convection involves the development of vel
 % Forced Convection Velocity Boundary Layer
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.75\linewidth]{Figures/velocity_boundary_layer.pdf}
+    \includegraphics[width=0.7\linewidth]{Figures/velocity_boundary_layer.pdf}
     \caption{Velocity boundary layer over a flat plate. \cite{Cengel2014FundamentalsConvection}}
     \label{fig:velocity_boundary_layer}
 \end{figure}
@@ -330,7 +330,7 @@ The stationary fluid layer adjacent to the surface exerts frictional resistance 
 % Forced Convection Thermal Boundary Layer
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.75\linewidth]{Figures/thermal_boundary_layer.pdf}
+    \includegraphics[width=0.7\linewidth]{Figures/thermal_boundary_layer.pdf}
     \caption{Thermal boundary layer on a flat plate (the plate surface is hotter than the fluid). Adapted from \cite{Cengel2014FundamentalsConvection}}
     \label{fig:thermal_boundary_layer}
 \end{figure}
@@ -342,7 +342,7 @@ The fluid particles adjacent to the surface of the plate reach thermal equilibri
 The convective heat transfer coefficient, $h$, is inversely proportional to the thermal boundary layer thickness, $\delta_t$. Therefore, a thinner $\delta_t$ enhances forced convective heat transfer.\vspace{0.5em}
 
 % RCM: Air
-In 2024, a study led by I. Al-Masalha from AlBalqa Applied University focused on improving the efficiency of photovoltaic modules using water sprinklers, air fans, and combined cooling systems. One of the methods explored involved using air fans to direct airflow over the surface of the modules. As a result, the temperature of the modules decreased by $6\%$ to $26\%$, as shown in Figure \ref{fig:air_cooling_temperature_graph}. This reduction in temperature led to an efficiency increase of $0.44\%$ to $1.45\%$, illustrated in Figure \ref{fig:air_cooling_efficiency_graph}. \cite{Al-Masalha2024ImprovingSystems}\vspace{0.5em}
+In 2024, a study led by I. Al-Masalha from AlBalqa Applied University focused on improving the efficiency of photovoltaic modules using air fans, water sprinklers, and combined cooling systems. One of the methods explored involved using air fans to direct airflow over the surface of the modules. As a result, the temperature of the modules decreased by $6\%$ to $26\%$, as shown in Figure \ref{fig:air_cooling_temperature_graph}. This reduction in temperature led to an efficiency increase of $0.44\%$ to $1.45\%$, illustrated in Figure \ref{fig:air_cooling_efficiency_graph}. \cite{Al-Masalha2024ImprovingSystems}
 
 \begin{figure}[ht]
     \centering
@@ -362,15 +362,50 @@ In 2024, a study led by I. Al-Masalha from AlBalqa Applied University focused on
 \end{figure}
 
 % RCM: Water
-- Example Study\par
+Al-Masalha et al.'s water cooling method involved spraying water directly onto the photovoltaic modules to dissipate heat. As illustrated in Figure \ref{fig:water_cooling_temperature_graph}, this technique resulted in a temperature reduction of the photovoltaic module by $20.45\%$ to $35.44\%$. Consequently, as shown in Figure \ref{fig:water_cooling_efficiency_graph}, the temperature reduction led to an efficiency improvement ranging from $0.6\%$ to $1.8\%$. \cite{Al-Masalha2024ImprovingSystems}
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/water_cooling_temperature_graph.pdf}
+        \caption{Comparison of PV temperature when using water sprinklers over time. \cite{Al-Masalha2024ImprovingSystems}}
+        \label{fig:water_cooling_temperature_graph}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/water_cooling_efficiency_graph.pdf}
+        \caption{Comparison of efficiency when using water sprinklers over time. \cite{Al-Masalha2024ImprovingSystems}}
+        \label{fig:water_cooling_efficiency_graph}
+    \end{minipage}
+\end{figure}
 
 % RCM: Combined Cooling System
-- Example Study
+ Finally, Al-Masalha's team combined water spraying and air cooling techniques to develop a hybrid cooling method. This system achieved the most effective results in terms of both temperature reduction and efficiency. As shown in Figure \ref{fig:hybrid_cooling_temperature_graph}, hybrid cooling led to a temperature decrease ranging from $30\%$ to $40\%$. This substantial reduction in temperature improved the photovoltaic module’s efficiency by $0.88\%$ to $2\%$. \cite{Al-Masalha2024ImprovingSystems}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/hybrid_cooling_temperature_graph.pdf}
+        \caption{Comparison of PV temperature when using hybrid cooling over time. \cite{Al-Masalha2024ImprovingSystems}}
+        \label{fig:hybrid_cooling_temperature_graph}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/hybrid_cooling_efficiency_graph.pdf}
+        \caption{Comparison of efficiency when using hybrid cooling over time. \cite{Al-Masalha2024ImprovingSystems}}
+        \label{fig:hybrid_cooling_efficiency_graph}
+    \end{minipage}
+\end{figure}
+
+% RCM: Nano-fluid
 
 % Explain why air is superior and then talk about VGs
-
-% RCM: Nano-fluid (NOT SURE WHERE TO PUT THIS YET)
-- Example Study\par
+- limitations of water -> therefore we choose air
+- limitations of fans -> therefore we choose VGs
 
 % RCM: Vortex-generators (leads on to the Vortex generator section of the report)
 - An overview of how vortex generators work.\par
@@ -406,21 +441,6 @@ In 2024, a study led by I. Al-Masalha from AlBalqa Applied University focused on
 %     \item What is a vortex?
 %     \item How does a vortex/system of vortexes induce heat transfer?
 %     \item Are there any drawbacks of vortex-induced heat transfer? If so, what are they?
-% \end{itemize}
-
-
-% \subsection{Convective Photovoltaic Module Cooling Methods}
-% \begin{itemize}
-%     \item What is convection?
-%     \item What are some cooling methods for convective photovoltaic modules?
-% \end{itemize}
-
-% \subsubsection{Cooling through Natural Convection}
-% \begin{itemize}
-%     \item What is Natural Convection?
-%     \item How is natural convection used as a cooling method for photovoltaic modules?
-%     \item Are there drawbacks to natural convection as a cooling method for photovoltaic modules?
-%     \item How does forced convection compare to natural convection as a cooling method for photovoltaic modules?
 % \end{itemize}
 
 % \subsubsection{Cooling through Forced Convection}
