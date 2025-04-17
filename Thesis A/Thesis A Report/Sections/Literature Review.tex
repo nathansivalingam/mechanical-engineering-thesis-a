@@ -229,7 +229,7 @@ Radiation is the energy emitted by matter in the form of electromagnetic waves (
 \end{equation}
 
 % polydimethylsiloxane film
-In 2018, a study led by B. Zhao from the University of Science and Technology of China investigated the performance impact of radiation-based cooling methods on photovoltaic modules. Zhao et al. modified a photovoltaic module by adding a polydimethylsiloxane (PDMS) film on its top surface. PDMS is known to have high emissivity in the mid-infrared range ($8-13\,\mu m$). \cite{Song2020UltrahighRegime} Through an inspection of Equation \ref{eq:rate_of_heat_radiation_function}, it is observed that an increased emissivity, $\varepsilon$, causes an increase in the rate of radiative heat transfer, $\dot{Q}_\text{rad}$. In theory, the increased radiative heat transfer of the photovoltaic module lowers the module's temperature and improves it's efficiency. However, Zhao et al. found that the temperature of the photovoltaic module was only reduced by 1.75 K in the ideal case. Furthermore, this result was achieved using a simulated environment. Thus, Zhao's team concluded that, in practical applications, enhanced radiative cooling does not offer significant potential for cooling photovoltaic modules. \cite{Zhao2018PerformanceModule}\vspace{0.5em}
+In 2018, a study led by B. Zhao from the University of Science and Technology of China investigated the performance impact of radiation-based cooling methods on photovoltaic modules. Zhao et al. modified a photovoltaic module by adding a polydimethylsiloxane (PDMS) film on its top surface. PDMS is known to have high emissivity in the mid-infrared range ($8-13\,\mu m$). \cite{Song2020UltrahighRegime} Through an inspection of Equation \ref{eq:rate_of_heat_radiation_function}, it is observed that an increased emissivity, $\varepsilon$, causes an increase in the rate of radiative heat transfer, $\dot{Q}_\text{rad}$. In theory, the increased radiative heat transfer of the photovoltaic module lowers the module's temperature and improves it's efficiency. However, Zhao et al. found that the temperature of the photovoltaic module was only reduced by 1.75 K in the ideal case. Furthermore, this result was achieved using a simulated environment. Thus, Zhao's team concluded that, in practical applications, enhanced radiative cooling does not offer significant potential for cooling photovoltaic modules. \cite{Zhao2018PerformanceModule}
 
 % Limitations of Radiation Based Cooling Methods
 
@@ -249,7 +249,7 @@ Natural convection is the process by which heat transferred to a fluid raises it
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth, trim=0 10 0 10, clip]{Figures/cooling_of_boiled_egg_natural_convection.pdf}
+    \includegraphics[width=0.5\textwidth, trim=0 10 0 15, clip]{Figures/cooling_of_boiled_egg_natural_convection.pdf}
     \caption{The cooling of a boiled egg by natural convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
     \label{fig:cooling_of_boiled_egg_natural_convection}
 \end{figure}
@@ -259,7 +259,7 @@ The tilt angle of a photovoltaic module significantly influences natural convect
 
 % \textit{\textbf{Talk about free convection boundary layers here}}\vspace{0.5em}
 
-A 2021 study led by A. Abdulmunem from the University of Malaya, Malaysia, investigated the impact of tilt angle on the performance of photovoltaic systems. Abdulmunem et al. observed that as the tilt angle increased from $0^\circ$ (horizontal) to $90^\circ$ (vertical), the temperature reduction in the photovoltaic cell increased from $-0.4\%$ to $-12\%$. This trend was attributed to enhanced convective heat transfer. Consequently, Abdulmunem et al. concluded that increasing the tilt angle of the photovoltaic module away from the horizontal axis and towards the vertical axis improves the rate of convective heat transfer. \cite{Abdulmunem2021NumericalSink}\vspace{0.5em}
+A 2021 study led by A. Abdulmunem from the University of Malaya, Malaysia, investigated the impact of tilt angle on the performance of photovoltaic systems. Abdulmunem et al. observed that as the tilt angle increased from $0^\circ$ (horizontal) to $90^\circ$ (vertical), the temperature reduction in the photovoltaic cell increased from $-0.4\%$ to $-12\%$. This trend was attributed to enhanced natural convective heat transfer which acts to improve photovoltaic module efficiency. Consequently, Abdulmunem et al. concluded that increasing the tilt angle of the photovoltaic module away from the horizontal axis and towards the vertical axis improves the rate of convective heat transfer. \cite{Abdulmunem2021NumericalSink}\vspace{0.5em}
 
 Abdulmunem's conclusion is also in excellent agreement with the theoretical relationship between the photovoltaic module's tilt angle and the natural convective heat trasfer rate. The Rayleigh number, $\text{Ra}_L$, which can be calculated using Equation \ref{eq:rayleigh_number_function}, is the ratio of buoyancy forces and (the products of) thermal and momentum diffusivities. \cite{Cengel2014NaturalConvection}.
 
@@ -277,7 +277,7 @@ For an inclined photovoltaic module between $0^\circ$ and $60^\circ$, the gravit
     \label{fig:inclined_plate}
 \end{figure}
 
-The Rayleigh number for a tilted photovoltaic module, $\text{Ra}_\theta$, is shown in Equation \ref{eq:rayleigh_number_tilted_function} \cite{Cengel2014NaturalConvection}.
+Thus, Equation \ref{eq:rayleigh_number_tilted_function} is the appropriate mathematical expression for the Rayleigh number of a tilted photovoltaic module, $\text{Ra}_\theta$. \cite{Cengel2014NaturalConvection}.
 
 \begin{equation}
     \text{Ra}_\theta = \frac{g\sin(\theta)\beta(T_s-T_\infty)L_c^3}{\nu\alpha}
@@ -299,36 +299,36 @@ Therefore, the increase in the Rayleigh number leads to an increase in the Nusse
     \label{eq:convective_heat_transfer_coefficient}
 \end{equation}
 
-Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher natural convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem et al.'s experimental findings.\vspace{0.5em}
+Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem et al.'s experimental findings.\vspace{0.5em}
 
 However, while a vertical photovoltaic module improves natural convective heat transfer, it limits the surface area that is directly exposed to the sun, reducing power output. Thus, a tilt angle of $45^\circ$ from the horizontal axis (as in earlier NOCT testing \cite{InternationalElectrotechnicalCommission2005IECApproval}) is generally used in photovoltaic module testing because it represents more realistic conditions.\vspace{0.5em}
 
-Natural convection-based cooling methods can be effective tools for reducing an object's temperature. In the context of photovoltaic modules, however, forced convection has been shown to be significantly more efficient at facilitating heat transfer from the module to its surroundings. A 2021 study led by A. Almuwailhi from King Saud University investigated the impact of both natural and forced convection cooling methods on the efficiency of photovoltaic modules. To promote natural convective heat transfer, Almuwailhi's team experimented with different channel air gaps behind the module. The most promising configuration featured an air gap of $120$ mm, which led to a $1.2\%$ increase in photovoltaic module efficiency. For forced convection, the researchers used airflow velocities of $2$ m/s and $3$ m/s. The results demonstrated a $3.8\%$ increase in efficiency with $2$ m/s airflow, and a $4\%$ increase with $3$ m/s airflow. \cite{Almuwailhi2023InvestigatingRiyadh} Therefore, this thesis will focus on forced convection based cooling methods.
+Natural convection-based cooling methods can effectively reduce an object's temperature; however, in photovoltaic modules, forced convection is significantly more efficient at transferring heat to the surroundings, resulting in greater improvements in module efficiency. A 2021 study led by A. Almuwailhi from King Saud University investigated the impact of both natural and forced convection cooling methods on the efficiency of photovoltaic modules. To promote natural convective heat transfer, Almuwailhi's team experimented with various channel air gaps. The most promising configuration featured an air gap height of $120$ mm, which led to a $1.2\%$ increase in photovoltaic module efficiency. For forced convection, Almuwailhi's team used airflow velocities of $2$ m/s and $3$ m/s. The results revealed a $3.8\%$ increase in efficiency with $2$ m/s airflow, and a $4\%$ increase with $3$ m/s airflow. \cite{Almuwailhi2023InvestigatingRiyadh} As a result, the remainder of this literature review will be dedicated to a comprehensive examination of forced convection cooling methods.
 
 \subsubsubsection{Forced Convection and Relevant Cooling Methods}
 Forced convection is a mode of heat transfer in which fluid flow over a surface is induced by external means such as a fan, pump, or wind, rather than resulting from natural buoyancy forces. \cite{Cengel2014IntroductionConcepts} Figure \ref{fig:cooling_of_boiled_egg_forced_convection} illustrates how forced convective heat transfer can be applied to cool a hot egg.\par
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{Figures/cooling_of_boiled_egg_forced_convection.pdf}
+    \includegraphics[width=0.5\textwidth, trim=0 5 0 10, clip]{Figures/cooling_of_boiled_egg_forced_convection.pdf}
     \caption{The cooling of a boiled egg by forced convection. Adapted from \cite{Cengel2014IntroductionConcepts}}
     \label{fig:cooling_of_boiled_egg_forced_convection}
 \end{figure}
 
 % - Explain a little bit more about forced convection and when you might consider natural convection, etc. (E.g., the relationship between the Reynold's number and the Grashof number.\vspace{0.5em}
 
-Similar to natural convection, forced convection involves the development of velocity and thermal boundary layers that control momentum and heat transfer in the vicinity of the surface.\par
+Similar to natural convection, forced convection involves the development of velocity and thermal boundary layers that control momentum and heat transfer in the vicinity of the surface.\vspace{0.5em}
 
 % Forced Convection Velocity Boundary Layer
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{Figures/velocity_boundary_layer.pdf}
+    \includegraphics[width=0.6\linewidth]{Figures/velocity_boundary_layer.pdf}
     \caption{Velocity boundary layer over a flat plate. \cite{Cengel2014FundamentalsConvection}}
     \label{fig:velocity_boundary_layer}
 \end{figure}
 
 % No slip condition
-Figure \ref{fig:velocity_boundary_layer} illustrates the velocity profile caused by parallel fluid flow over a flat plate. To understand this velocity profile, the fluid is modelled as a series of adjacent layers stacked on top of one another. The fluid particles in the layer closest to a solid surface are subject to the no-slip condition, which states that their velocity must match that of the boundary, resulting in zero relative motion between the fluid and the surface. Since photovoltaic modules remain stationary during operation, the fluid layer in direct contact with their surface has a velocity, $u$, of zero. \cite{Cengel2014FundamentalsConvection}\vspace{0.5em}
+Figure \ref{fig:velocity_boundary_layer} illustrates the velocity profile caused by parallel fluid flow over a flat plate. To understand this velocity profile, the fluid is modelled as a series of adjacent layers stacked on top of one another. The fluid particles in the layer closest to a solid surface are subject to the no-slip condition, which states that their velocity must match that of the boundary, resulting in zero relative motion between the fluid and the surface. Since photovoltaic modules remain stationary during operation, the fluid layer in direct contact with the surface has a velocity, $u$, of zero. \cite{Cengel2014FundamentalsConvection}\vspace{0.5em}
 
 % Boundary layer 
 The stationary fluid layer adjacent to the surface exerts frictional resistance on the fluid layer above it, reducing its velocity through shear interaction between layers moving at different speeds. This process propagates through successive fluid layers, each experiencing a reduction in momentum due to shear from the layer beneath, resulting in a velocity profile that increases with distance from the surface, but at a decreasing rate. At the boundary layer thickness, $\delta$, the plate has negligible effect on the velocity of the fluid. Thus, $\delta$, is typically defined as the distance from the surface where $u = 0.99V$. Therefore, the velocity boundary layer can be defined as the region of flow above the plate, bounded by $\delta$, where the effects of viscous shearing forces are significant. \cite{Cengel2014FundamentalsConvection}\vspace{0.5em}
@@ -345,10 +345,10 @@ Figure \ref{fig:thermal_boundary_layer} shows the temperature profile that resul
 
 The fluid particles adjacent to the surface of the plate reach thermal equilibrium with the plate, adopting a temperature, $T_s$. This fluid layer transfers energy to the layer directly above it, resulting in a temperature gradient where each successive layer has a slightly lower temperature than the previous one, with the rate of decrease diminishing progressively. The boundary layer thickness, $\delta_t$, represents the perpendicular distance from the flat plate at which the influence of the plate's temperature, $T_s$, on the fluid temperature, $T_\infty$, becomes negligible. Thus, the thickness of the thermal boundary layer at any location on the surface occurs when $T = T_s-0.99(T_s-T_\infty)$. Therefore, the thermal boundary layer is defined as the flow region above the surface, bounded by $\delta_t$, where the temperature variation in the direction normal to the surface is significant. \cite{Cengel2014FundamentalsConvection}\vspace{0.5em}
 
-The convective heat transfer coefficient, $h$, is inversely proportional to the thermal boundary layer thickness, $\delta_t$. Forced convection cooling techniques enhance heat transfer by reducing the temperature gradient distance between the surface temperature, $T_s$, and the ambient temperature, $T_\infty$, effectively thinning the boundary layer. Thus, forced convection cooling methods significantly improve convective heat transfer performance.\vspace{0.5em}
+A thicker thermal boundary layer results in a more gradual temperature gradient at the surface, reducing the effectiveness of convective cooling. To overcome this limitation, forced convection techniques are employed to disrupt and thin the boundary layer, enhancing the temperature gradient at the surface. This increase in gradient leads to a higher convective heat transfer rate, which lowers the operating temperature of the photovoltaic module and subsequently improves its efficiency.\vspace{0.5em}
 
 % RCM: Air
-In 2024, a study led by I. Al-Masalha from AlBalqa Applied University focused on improving the efficiency of photovoltaic modules using air fans, water sprinklers, and combined cooling systems. One of the methods explored involved using air fans to direct airflow over the surface of the modules. As a result, the temperature of the modules decreased by $6\%$ to $26\%$, as shown in Figure \ref{fig:air_cooling_temperature_graph}. This reduction in temperature led to an efficiency increase of $0.44\%$ to $1.45\%$, illustrated in Figure \ref{fig:air_cooling_efficiency_graph}. \cite{Al-Masalha2024ImprovingSystems}
+In 2024, a study led by I. Al-Masalha from Al-Balqa Applied University investigated the enhancement of photovoltaic module efficiency through various cooling techniques, including air fans, water sprinklers, and hybrid systems. One of the approaches involved directing airflow over the surface of the modules using air fans. This method resulted in a module temperature reduction ranging from $6\%$ to $26\%$, as shown in Figure \ref{fig:air_cooling_temperature_graph}. Correspondingly, this temperature decrease led to an improvement in electrical efficiency within the range of $0.44\%$ and $1.45\%$, as illustrated in Figure \ref{fig:air_cooling_efficiency_graph} \cite{Al-Masalha2024ImprovingSystems}.
 
 \begin{figure}[ht]
     \centering
@@ -368,7 +368,7 @@ In 2024, a study led by I. Al-Masalha from AlBalqa Applied University focused on
 \end{figure}
 
 % RCM: Water
-Al-Masalha et al.'s water cooling method involved spraying water directly onto the photovoltaic modules to dissipate heat. As illustrated in Figure \ref{fig:water_cooling_temperature_graph}, this technique resulted in a temperature reduction of the photovoltaic module by $20.45\%$ to $35.44\%$. Consequently, as shown in Figure \ref{fig:water_cooling_efficiency_graph}, the temperature reduction led to an efficiency improvement ranging from $0.6\%$ to $1.8\%$. \cite{Al-Masalha2024ImprovingSystems}
+Al-Masalha et al.'s water cooling method involved spraying water directly onto the photovoltaic modules to dissipate heat. As illustrated in Figure \ref{fig:water_cooling_temperature_graph}, this technique resulted in a temperature reduction of the photovoltaic module ranging from $20.45\%$ to $35.44\%$. Consequently, as shown in Figure \ref{fig:water_cooling_efficiency_graph}, this temperature reduction led to an efficiency improvement between $0.6\%$ and $1.8\%$. \cite{Al-Masalha2024ImprovingSystems}
 
 \begin{figure}[ht]
     \centering
@@ -388,7 +388,7 @@ Al-Masalha et al.'s water cooling method involved spraying water directly onto t
 \end{figure}
 
 % RCM: Combined Cooling System
- Finally, Al-Masalha's team combined water spraying and air cooling techniques to develop a hybrid cooling method. This system achieved the most effective results in terms of both temperature reduction and efficiency. As shown in Figure \ref{fig:hybrid_cooling_temperature_graph}, hybrid cooling led to a temperature decrease ranging from $30\%$ to $40\%$. This substantial reduction in temperature improved the photovoltaic module’s efficiency by $0.88\%$ to $2\%$. \cite{Al-Masalha2024ImprovingSystems}
+In their final approach, Al-Masalha's team developed a hybrid cooling system by combining water spraying and air cooling techniques. This integrated method produced the most significant results in terms of both temperature reduction and efficiency improvement. The hybrid cooling system achieved a temperature reduction in the range of $30\%$ and $40\%$, shown in Figure \ref{fig:hybrid_cooling_temperature_graph}. This substantial reduction in temperature led to an increase in photovoltaic module efficiency, ranging from $0.88\%$ to $2\%$, as illustrated in Figure \ref{fig:hybrid_cooling_efficiency_graph} \cite{Al-Masalha2024ImprovingSystems}.
 
 \begin{figure}[H]
     \centering
@@ -408,14 +408,30 @@ Al-Masalha et al.'s water cooling method involved spraying water directly onto t
 \end{figure}
 
 % RCM: Nano-fluid
-Nanofluid-based cooling has emerged as a highly effective technique for enhancing the thermal management and overall efficiency of photovoltaic modules. In 2022, T.K. Murtadha et al. conducted an experimental investigation into the performance enhancement of photovoltaic modules using titanium dioxide nanofluids. Their findings indicated that higher nanoparticle concentrations correlated with improved heat dissipation, resulting in a maximum efficiency gain of $19.23\%$ under optimal nanofluid cooling conditions. \cite{Murtadha2022ImprovingNanofluid}\vspace{0.5em}
+In recent times, nanofluid-based cooling methods have emerged as a highly effective technique for enhancing the thermal management and overall efficiency of photovoltaic modules. In 2022, T.K. Murtadha et al. conducted an experimental investigation into the performance enhancement of photovoltaic modules using titanium dioxide nanofluids. Their findings indicated that higher nanoparticle concentrations correlated with improved heat dissipation, resulting in a maximum efficiency gain of $19.23\%$ under optimal nanofluid cooling conditions. \cite{Murtadha2022ImprovingNanofluid}\vspace{0.5em}
 
 % Explain why air is superior and then talk about VGs
-The studies conducted by Al-Masalha et al. \cite{Al-Masalha2024ImprovingSystems} and Murtadha et al. \cite{Murtadha2022ImprovingNanofluid} clearly demonstrate that water and nanofluid cooling methods outperform air-based cooling in terms of thermal regulation and efficiency enhancement for photovoltaic modules. However, despite their superior performance, water and nanofluid cooling systems are significantly less prevalent than air cooling in photovoltaic applications. This disparity is primarily due to several practical limitations. Both water and nanofluid systems entail higher initial and operational costs, as well as increased system complexity. \cite{Dwivedi2020AdvancedArt, Suresh2018RoleEfficiency} Additionally, they demand more frequent and intensive maintenance compared to air cooling systems, further escalating long-term expenses. \cite{Samykano2023HybridApplications, Ponticorvo2022FoulingFluid} Moreover, the structural load associated with liquid-based cooling is greater due to the added weight of the coolant medium, which imposes additional design and material constraints. \cite{Sakanova2016InvestigationAircraft} These factors collectively impact the cost-effectiveness of photovoltaic cooling strategies, rendering air cooling the most viable option for both commercial and residential implementations. Consequently, air cooling remains the most commonly employed method for photovoltaic module thermal management. \cite{Dwivedi2020AdvancedArt} \vspace{0.5em}
+The studies conducted by Al-Masalha et al. \cite{Al-Masalha2024ImprovingSystems} and Murtadha et al. \cite{Murtadha2022ImprovingNanofluid} clearly demonstrate that water and nanofluid cooling methods outperform air-based cooling in terms of thermal regulation and efficiency improvement for photovoltaic modules. However, despite their superior performance, water and nanofluid cooling systems are significantly less prevalent than air cooling in photovoltaic applications. This disparity is primarily due to several practical limitations. Both water and nanofluid systems entail higher initial and operational costs, as well as increased system complexity. \cite{Dwivedi2020AdvancedArt, Suresh2018RoleEfficiency} Additionally, they demand more frequent and intensive maintenance compared to air cooling systems, further escalating long-term expenses. \cite{Samykano2023HybridApplications, Ponticorvo2022FoulingFluid} Moreover, the structural load associated with liquid-based cooling is greater due to the added weight of the coolant medium, which imposes additional design and material constraints. \cite{Sakanova2016InvestigationAircraft} These factors collectively impact the cost-effectiveness of photovoltaic cooling strategies, rendering air cooling the most viable option for both commercial and residential implementations. Consequently, air cooling remains the most commonly employed method for photovoltaic module thermal management. \cite{Dwivedi2020AdvancedArt} \vspace{0.5em}
 
-As was stated previously, Al-Masalha et al. implemented active cooling of photovoltaic modules using electric powered air fans to facilitate convective heat transfer. This approach incurs a parasitic energy cost, as external power is required to operate the fans. Vortex generators provide a passive cooling alternative that uses wind to induce localised turbulence and enhance convective heat transfer. Thus, vortex generators will be the primary focus of this thesis.
+As was stated previously, Al-Masalha et al. implemented active cooling of photovoltaic modules using electric powered air fans to facilitate convective heat transfer. \cite{Al-Masalha2024ImprovingSystems} However, this approach incurs a parasitic energy cost, as external power is required to operate the fans. Vortex generators provide a passive cooling alternative that uses wind to induce localised turbulence and enhance convective heat transfer. Therefore, this literature review will examine the application of vortex generators in enhancing the thermal management of photovoltaic modules, ultimately leading to improved module efficiency.
 
-\subsubsection{Vortex Generators: Vortex Induced Heat Transfer} % How are vortices used to induce heat transfer
+\subsubsection{Vortex Generators: Vortex Induced Heat Transfer}
+Vortex generators are protrusions on the heat transfer surface that induce swirling flow around an axis, leading to the creation of vortices. \cite{Awais2018HeatActivities}\par
+
+As fluid makes contact with a vortex generator, it is forced to swirl around the generator, forming vortices.\par
+
+
+- How do vortex generators create vortices?\par
+- How do these vortices affect the convective heat transfer rate?\par
+- Cite source number 1.\par
+- Cite source number 2.\par
+\vspace{0.5em}
+
+- What parameters affect how good vortex generators are at reducing photovoltaic module temperature?
+- Parameter 2 (Sophie): Orientation
+- Parameter 1 (Ishan): Shape
+- Parameter 2 (Barry): Spacing
+
 \begin{itemize}
     \item Sophie's Research
     \item Barry's Research
