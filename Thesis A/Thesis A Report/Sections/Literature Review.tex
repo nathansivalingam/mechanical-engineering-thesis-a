@@ -305,7 +305,7 @@ However, while a vertical photovoltaic module improves natural convective heat t
 
 Natural convection-based cooling methods can effectively reduce an object's temperature; however, in photovoltaic modules, forced convection is significantly more efficient at transferring heat to the surroundings, resulting in greater improvements in module efficiency. A 2021 study led by A. Almuwailhi from King Saud University investigated the impact of both natural and forced convection cooling methods on the efficiency of photovoltaic modules. To promote natural convective heat transfer, Almuwailhi's team experimented with various channel air gaps. The most promising configuration featured an air gap height of $120$ mm, which led to a $1.2\%$ increase in photovoltaic module efficiency. For forced convection, Almuwailhi's team used airflow velocities of $2$ m/s and $3$ m/s. The results revealed a $3.8\%$ increase in efficiency with $2$ m/s airflow, and a $4\%$ increase with $3$ m/s airflow. \cite{Almuwailhi2023InvestigatingRiyadh} As a result, the remainder of this literature review will be dedicated to a comprehensive examination of forced convection cooling methods.
 
-\subsubsubsection{Forced Convection and Relevant Cooling Methods}
+\subsubsubsection{Forced Convection and Relevant Cooling Methods} \label{sec:forced_convection_and_relevant_cooling_methods}
 Forced convection is a mode of heat transfer in which fluid flow over a surface is induced by external means such as a fan, pump, or wind, rather than resulting from natural buoyancy forces. \cite{Cengel2014IntroductionConcepts} Figure \ref{fig:cooling_of_boiled_egg_forced_convection} illustrates how forced convective heat transfer can be applied to cool a hot egg.\par
 
 \begin{figure}[ht]
@@ -415,7 +415,8 @@ The studies conducted by Al-Masalha et al. \cite{Al-Masalha2024ImprovingSystems}
 
 As was stated previously, Al-Masalha et al. implemented active cooling of photovoltaic modules using electric powered air fans to facilitate convective heat transfer. \cite{Al-Masalha2024ImprovingSystems} However, this approach incurs a parasitic energy cost, as external power is required to operate the fans. Vortex generators provide a passive cooling alternative that uses wind to induce localised turbulence and enhance convective heat transfer. Therefore, this literature review will examine the application of vortex generators in enhancing the thermal management of photovoltaic modules, ultimately leading to improved module efficiency.
 
-\subsubsection{Vortex Generators: Vortex Induced Heat Transfer}
+\subsubsection{Vortex Generators}
+\subsubsubsection{An Overview of Vortex Generator Effects on Heat Transfer Enhancement}
 Vortex generators are protrusions on a heat transfer surface that induce swirling flow around an axis, creating vortices that enhance convective heat transfer. \cite{Awais2018HeatActivities} Figure \ref{fig:vortex_generator} depicts the interaction between fluid and a cylindrical vortex generator upon contact.
 
 \begin{figure}[H]
@@ -425,17 +426,35 @@ Vortex generators are protrusions on a heat transfer surface that induce swirlin
     \label{fig:vortex_generator}
 \end{figure}
 
-Figure \ref{fig:vortex_generator} also illustrates two key features associated with vortex generators: the forward stagnation point and the separation point. The forward stagnation point denotes the location where the fluid velocity, $u$, is zero, while the separation point marks where the airflow detaches from the object's surface.\par
-At the point of flow separation, vortices, known as Kármán vortices in the context of cylinders, are formed.
+Figure \ref{fig:vortex_generator} also illustrates two key features associated with vortex generators: the forward stagnation point and the separation point. At the forward stagnation point, the fluid velocity, $u$, is zero, while the separation point marks the location where the airflow detaches from the surface of the object. At the separation point, vortices, referred to as Kármán vortices in the context of cylindrical bodies, are generated. \cite{Wille1960KarmanStreets} These vortices promote mixing between the high-momentum outer fluid and the low-momentum near-wall fluid, enhancing momentum and energy exchange near the surface. This mixing leads to the thinning of the thermal boundary layer. As discussed in Section \ref{sec:forced_convection_and_relevant_cooling_methods}, an inverse relationship exists between the thermal boundary layer thickness and the rate of convective heat transfer. Therefore, the reduction in boundary layer thickness results in an enhanced convective heat transfer rate.
 
-- At the separation point, strong vortices are created.
-- If the incoming boundary layer is turbulent, flow separation around the cylinder is smaller and more controlled, producing stronger, more coherent vortices.
-- These vortices mix high-momentum outer fluid with low-momentum near-wall fluid, increasing momentum and energy exchange near the surface.
-- Mixing thins the thermal boundary layer, improving convective heat transfer.
+\subsubsubsection{Quantifying the Effect of Vortex Generators on Heat Transfer}
+The location of the separation point on a cylinder depends on the boundary layer’s transition from laminar to turbulent flow. This transition is primarily characterised by the Reynolds number, \(\text{Re}_D\), which is defined as the ratio of inertial to viscous forces in the fluid. For cylindrical shapes, the Reynolds number is calculated using Equation~\ref{eq:reynolds_number}~\cite{Cengel2014ExternalConvection}.
 
-\vspace{0.5em}
-% - How do vortex generators create vortices?\par
-% - How do these vortices affect the convective heat transfer rate?\par
+\begin{equation}
+    \text{Re}_D = \frac{\rho V D}{\mu} = \frac{V D}{\nu}
+    \label{eq:reynolds_number}
+\end{equation}
+
+To estimate the average Nusselt number for cross flow over a cylinder, Churchill and Bernstein (1977) proposed an empirical correlation that accounts for the Reynolds and Prandtl numbers, as shown in Equation~\ref{eq:churchill_bernstein_average_nusselt_number}~\cite{Cengel2014ExternalConvection}.
+
+\begin{equation}
+    \text{Nu}_{\text{cyl}} = 0.3 + \frac{0.62\,\text{Re}^{1/2}\,\text{Pr}^{1/3}}{\left[1 + (0.4/\text{Pr})^{2/3}\right]^{1/4}} \left[1 + \left(\frac{\text{Re}}{282,000}\right)^{5/8}\right]^{4/5}
+    \label{eq:churchill_bernstein_average_nusselt_number}
+\end{equation}
+
+Once the average Nusselt number is determined, the average convective heat transfer coefficient, \(h\), can be calculated using Equation~\ref{eq:average_nusselt_number_convective_heat_transfer_coefficient}~\cite{Cengel2014ExternalConvection}.
+
+\begin{equation}
+    \text{Nu}_{\text{cyl}} = \frac{h D}{k}
+    \label{eq:average_nusselt_number_convective_heat_transfer_coefficient}
+\end{equation}
+
+Finally, the convective heat transfer coefficient can be used to determine the rate of convective heat transfer, as shown in Equation~\ref{eq:rate_of_convective_heat_transfer_function}.\vspace{0.5em}
+
+In 2024, a study led by Z. Zhou from the University of New South Wales investigated the effect of vortex generators on photovoltaic module cooling under free convection conditions.\par
+
+
 % - Cite source number 1.\par
 % - Cite source number 2.\par
 % \vspace{0.5em}
@@ -464,12 +483,6 @@ At the point of flow separation, vortices, known as Kármán vortices in the con
 
 \pagebreak
 
-% \subsubsection{Vortex Induced Heat Transfer}
-% \begin{itemize}
-%     \item What is a vortex?
-%     \item How does a vortex/system of vortexes induce heat transfer?
-%     \item Are there any drawbacks of vortex-induced heat transfer? If so, what are they?
-% \end{itemize}
 
 % \subsubsection{Cooling through Forced Convection}
 % \begin{itemize}
