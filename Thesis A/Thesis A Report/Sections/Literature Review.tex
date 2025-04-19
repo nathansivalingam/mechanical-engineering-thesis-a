@@ -299,7 +299,7 @@ Therefore, the increase in the Rayleigh number leads to an increase in the Nusse
     \label{eq:convective_heat_transfer_coefficient}
 \end{equation}
 
-Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem et al.'s experimental findings.\vspace{0.5em}
+Finally, an inspection of Equation \ref{eq:rate_of_convective_heat_transfer_function} shows that an increase in the convective heat transfer coefficient, $h$, results in a higher convective heat transfer rate, $\dot{Q}_\text{conv}$, thereby supporting Abdulmunem et al.'s experimental findings. \cite{Cengel2014IntroductionConcepts} \vspace{0.5em}
 
 However, while a vertical photovoltaic module improves natural convective heat transfer, it limits the surface area that is directly exposed to the sun, reducing power output. Thus, a tilt angle of $45^\circ$ from the horizontal axis (as in earlier NOCT testing \cite{InternationalElectrotechnicalCommission2005IECApproval}) is generally used in photovoltaic module testing because it represents more realistic conditions.\vspace{0.5em}
 
@@ -450,27 +450,38 @@ Once the average Nusselt number is determined, the average convective heat trans
     \label{eq:average_nusselt_number_convective_heat_transfer_coefficient}
 \end{equation}
 
-Finally, the convective heat transfer coefficient can be used to determine the rate of convective heat transfer, as shown in Equation~\ref{eq:rate_of_convective_heat_transfer_function}.\vspace{0.5em}
+Finally, the convective heat transfer coefficient can be used to determine the rate of convective heat transfer, as shown in Equation~\ref{eq:rate_of_convective_heat_transfer_function}. \cite{Cengel2014IntroductionConcepts} \vspace{0.5em}
 
-In 2024, a study led by Z. Zhou from the University of New South Wales investigated the effect of vortex generators on photovoltaic module cooling under free convection conditions.\par
+In recent years, several studies have been published examining the influence of vortex generators on the rate of convective heat transfer. A 2024 study led by Z. Zhou from the University of New South Wales investigated the effect of vortex generators on photovoltaic module cooling. Zhou et al. attached rectangular wing vortex generators, made from either aluminium sheet or 3D printed thermally conductive polymer, to the rear side of the photovoltaic modules. Although the vortex generators were optimised for free convection, both designs successfully reduced the photovoltaic module temperature by $1.5^{\circ} \text{C}$ under low wind conditions and high irradiance. In scenarios with high module temperatures and windy conditions, the aluminium vortex generators achieved a greater cooling effect, reducing the module temperature by $2.5^{\circ} \text{C}$. \cite{Zhou2024Long-termCooling} \vspace{0.5em}
 
+Zhou et al.'s observation of varying results due to different materials used in vortex generators demonstrates how modifications to vortex generator parameters can significantly impact their ability to reduce photovoltaic module temperature. \cite{Zhou2024Long-termCooling} As a result, various studies have investigated the influence of other vortex generator parameter modifications on the thermal performance of photovoltaic modules.
 
-% - Cite source number 1.\par
-% - Cite source number 2.\par
-% \vspace{0.5em}
+\subsubsubsection{Vortex Generators Orientation}
+A 2023 study conducted by S. Schiffman from the University of New South Wales investigated the effect of vortex generator orientation on photovoltaic module temperature.\par
+Schiffman oriented 3D printed vortex generators in a forward formation, shown in Figure ###, and in a backwards formation, shown in Figure ###.\cite{Schiffmann2023AnConditions}
 
-- What parameters affect how good vortex generators are at reducing photovoltaic module temperature?
-- Parameter 2 (Sophie): Orientation
-- Parameter 1 (Ishan): Shape
-- Parameter 2 (Barry): Spacing
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/}
+        \caption{Forward facing vortex generator configuration. Adapted from \cite{Schiffmann2023AnConditions}}
+        \label{fig:fwd_full_fomation}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/}
+        \caption{Backward facing vortex generator configuration. Adapted from \cite{Schiffmann2023AnConditions}}
+        \label{fig:back_full_formation}
+    \end{minipage}
+\end{figure}
 
-\begin{itemize}
-    \item Sophie's Research
-    \item Barry's Research
-    \item Ishan's Research
-    \item Matt's Research
-    \item Other People's Research
-\end{itemize}
+Schiffman's experiment revealed that while both configurations facilitated cooling of the photovoltaic module, the forward facing configuration produced the most cooling, reducing the module's temperature by $1.82^\circ \text{C}$.\par
+
+\subsubsubsection{Vortex Generators Shape}
+\subsubsubsection{Vortex Generators Spacing}
+
 
 \pagebreak
 \subsection{Experimental Techniques}
