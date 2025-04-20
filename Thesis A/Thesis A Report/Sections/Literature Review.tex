@@ -417,7 +417,7 @@ As was stated previously, Al-Masalha et al. implemented active cooling of photov
 
 \subsubsection{Vortex Generators}
 \subsubsubsection{An Overview of Vortex Induced Heat Transfer}
-Vortex generators are protrusions on a heat transfer surface that induce swirling flow around an axis, creating vortices that enhance convective heat transfer. \cite{Awais2018HeatActivities} Figure \ref{fig:vortex_generator} depicts the interaction between fluid and a cylindrical vortex generator upon contact.
+Vortex generators are protrusions on a heat transfer surface that induce swirling flow around an axis, generating vortices that enhance convective heat transfer. \cite{Awais2018HeatActivities} Figure \ref{fig:vortex_generator} illustrates this phenomenon for a cylindrical vortex generator interacting with the surrounding fluid.
 
 \begin{figure}[H]
     \centering
@@ -426,38 +426,38 @@ Vortex generators are protrusions on a heat transfer surface that induce swirlin
     \label{fig:vortex_generator}
 \end{figure}
 
-Figure \ref{fig:vortex_generator} also illustrates two key features associated with vortex generators: the forward stagnation point and the separation point. At the forward stagnation point, the fluid velocity, $u$, is zero, while the separation point marks the location where the airflow detaches from the surface of the object. At the separation point, vortices, referred to as Kármán vortices in the context of cylindrical bodies, are generated. \cite{Wille1960KarmanStreets} These vortices promote mixing between the high-momentum outer fluid and the low-momentum near-wall fluid, enhancing momentum and energy exchange near the surface. This mixing leads to the thinning of the thermal boundary layer. As discussed in Section \ref{sec:forced_convection_and_relevant_cooling_methods}, an inverse relationship exists between the thermal boundary layer thickness and the rate of convective heat transfer. Therefore, the reduction in boundary layer thickness results in an enhanced convective heat transfer rate.
+Figure \ref{fig:vortex_generator} also draws attention to two key features associated with vortex generators: the forward stagnation point and the separation point. At the forward stagnation point, the fluid velocity, $u$, is zero, while the separation point marks the location where the airflow detaches from the surface of the object. At the separation point, vortices, referred to as Kármán vortices in the context of cylindrical bodies, are generated. \cite{Wille1960KarmanStreets} These vortices promote mixing between the high-momentum outer fluid and the low-momentum near-wall fluid, enhancing momentum and energy exchange near the surface. This mixing leads to the thinning of the thermal boundary layer. As discussed in Section \ref{sec:forced_convection_and_relevant_cooling_methods}, an inverse relationship exists between the thermal boundary layer thickness and the rate of convective heat transfer. Therefore, the reduction in boundary layer thickness results in an enhanced convective heat transfer rate.
 
 \subsubsubsection{Quantifying the Effect of Vortex Generators on Heat Transfer}
-The location of the separation point on a cylinder depends on the boundary layer’s transition from laminar to turbulent flow. This transition is primarily characterised by the Reynolds number, \(\text{Re}_D\), which is defined as the ratio of inertial to viscous forces in the fluid. For cylindrical shapes, the Reynolds number is calculated using Equation~\ref{eq:reynolds_number}~\cite{Cengel2014ExternalConvection}.
+The location of the separation point on a cylinder depends on the boundary layer’s transition from laminar to turbulent flow. This transition is primarily characterised by the Reynolds number, \(\text{Re}_D\), defined as the ratio of inertial to viscous forces in the fluid. For cylindrical shapes, the Reynolds number is calculated using Equation~\ref{eq:reynolds_number}. \cite{Cengel2014ExternalConvection}
 
 \begin{equation}
     \text{Re}_D = \frac{\rho V D}{\mu} = \frac{V D}{\nu}
     \label{eq:reynolds_number}
 \end{equation}
 
-To estimate the average Nusselt number for cross flow over a cylinder, Churchill and Bernstein (1977) proposed an empirical correlation that accounts for the Reynolds and Prandtl numbers, as shown in Equation~\ref{eq:churchill_bernstein_average_nusselt_number}~\cite{Cengel2014ExternalConvection}.
+The Reynolds number is closely related to the Nusselt number; however, for cylindrical vortex generators in cross flow, the relationship is not straightforward. To address this, Churchill and Bernstein (1977) proposed an empirical correlation to estimate the average Nusselt number for cross flow over a cylinder, $\text{Nu}_\text{cyl}$, incorporating both the Reynolds and Prandtl numbers, as shown in Equation \ref{eq:churchill_bernstein_average_nusselt_number}. \cite{Cengel2014ExternalConvection}
 
 \begin{equation}
     \text{Nu}_{\text{cyl}} = 0.3 + \frac{0.62\,\text{Re}^{1/2}\,\text{Pr}^{1/3}}{\left[1 + (0.4/\text{Pr})^{2/3}\right]^{1/4}} \left[1 + \left(\frac{\text{Re}}{282,000}\right)^{5/8}\right]^{4/5}
     \label{eq:churchill_bernstein_average_nusselt_number}
 \end{equation}
 
-Once the average Nusselt number is determined, the average convective heat transfer coefficient, \(h\), can be calculated using Equation~\ref{eq:average_nusselt_number_convective_heat_transfer_coefficient}~\cite{Cengel2014ExternalConvection}.
+The average Nusselt number, $\text{Nu}_\text{cyl}$, has a proportional relationship with the average convective heat transfer coefficient, $h$, shown in Equation~\ref{eq:average_nusselt_number_convective_heat_transfer_coefficient}~\cite{Cengel2014ExternalConvection}.
 
 \begin{equation}
     \text{Nu}_{\text{cyl}} = \frac{h D}{k}
     \label{eq:average_nusselt_number_convective_heat_transfer_coefficient}
 \end{equation}
 
-Finally, the convective heat transfer coefficient can be used to determine the rate of convective heat transfer, as shown in Equation~\ref{eq:rate_of_convective_heat_transfer_function}. \cite{Cengel2014IntroductionConcepts} \vspace{0.5em}
+Thus, the resulting convective heat transfer coefficient, $h$, can be used to determine the rate of convective heat transfer, as shown in Equation \ref{eq:rate_of_convective_heat_transfer_function}, thereby quantifying the effect of cylindrical vortex generators on heat transfer. \cite{Cengel2014IntroductionConcepts} \vspace{0.5em}
 
-In recent years, several studies have been published examining the influence of vortex generators on the rate of convective heat transfer. A 2024 study led by Z. Zhou from the University of New South Wales investigated the effect of vortex generators on photovoltaic module cooling. Zhou et al. attached rectangular wing vortex generators, made from either aluminium sheet or 3D printed thermally conductive polymer, to the rear side of the photovoltaic modules. Although the vortex generators were optimised for free convection, both designs successfully reduced the photovoltaic module temperature by $1.5^{\circ} \text{C}$ under low wind conditions and high irradiance. In scenarios with high module temperatures and windy conditions, the aluminium vortex generators achieved a greater cooling effect, reducing the module temperature by $2.5^{\circ} \text{C}$. \cite{Zhou2024Long-termCooling} \vspace{0.5em}
+A 2024 study led by Z. Zhou from the University of New South Wales investigated the effect of vortex generators on photovoltaic module cooling. Zhou et al. attached rectangular wing vortex generators, made from either aluminium sheet or 3D-printed thermally conductive polymer, to the rear side of the photovoltaic modules. Although the vortex generators were optimised for free convection, both designs successfully reduced the photovoltaic module temperature by $1.5^{\circ} \text{C}$ under low wind conditions and high irradiance. In scenarios with high module temperatures and windy conditions, the aluminium vortex generators achieved a greater cooling effect, reducing the module temperature by $2.5^{\circ} \text{C}$. \cite{Zhou2024Long-termCooling} \vspace{0.5em}
 
-Zhou et al.'s observation of varying results due to different materials used in vortex generators demonstrates how modifications to vortex generator parameters can significantly impact their ability to reduce photovoltaic module temperature. \cite{Zhou2024Long-termCooling} As a result, various studies have investigated the influence of other vortex generator parameter modifications on the thermal performance of photovoltaic modules.
+Zhou et al.'s observation of variations in results due to different vortex generator materials highlights the significant influence of vortex generator parameters on photovoltaic module cooling. \cite{Zhou2024Long-termCooling} As a result, several studies have investigated the influence of other vortex generator parameter modifications on the thermal performance of photovoltaic modules.
 
 \subsubsubsection{Effect of Vortex Generator Orientation on Heat Transfer}
-A 2023 study conducted by S. Schiffman from the University of New South Wales investigated the effect of vortex generator orientation on photovoltaic module temperature. Schiffman positioned 3D-printed vortex generators in two configurations: a forward-facing arrangement (Figure \ref{fig:fwd_full_fomation}) and a backward-facing arrangement (Figure \ref{fig:back_full_formation}). \cite{Schiffmann2023AnConditions}
+A 2023 study conducted by S. Schiffman from the University of New South Wales investigated the effect of vortex generator orientation on photovoltaic module temperature. Schiffman positioned 3D-printed vortex generators in two configurations: a forward-facing arrangement (Figure \ref{fig:fwd_full_fomation}) and a backward-facing arrangement (Figure \ref{fig:back_full_formation}).
 
 \begin{figure}[H]
     \centering
@@ -479,7 +479,7 @@ A 2023 study conducted by S. Schiffman from the University of New South Wales in
 Schiffman's experiment revealed that although both configurations enhanced cooling of the photovoltaic module, the backward-facing arrangement consistently achieved greater temperature reductions across wind speeds of $1,\text{m/s}$, $2,\text{m/s}$, and $3,\text{m/s}$. Specifically, the backward-facing setup achieved mean temperature reductions of approximately $1.4^\circ\text{C}$, $0.75^\circ\text{C}$, and $0.7^\circ\text{C}$, respectively. \cite{Schiffmann2023AnConditions}
 
 \subsubsubsection{Effect of Vortex Generator Shape on Heat Transfer}
-Schiffman's results and experimental setup laid the foundation for further investigations into additional parameters influencing module cooling performance. Building on this work, I.R. Chaudhury examined the impact of vortex generator geometry on photovoltaic module cooling. Chaudhury tested several shapes, including cube, cylindrical, pyramid, inverted pyramid, and winglet configurations, shown in Figure \ref{fig:vortex_generator_shapes}. \cite{Chaudhury2024TheConvection}
+Schiffman's results and experimental setup laid the foundation for further investigations into additional parameters influencing module cooling performance. Building on this work, I.R. Chaudhury examined the impact of vortex generator geometry on photovoltaic module cooling. Chaudhury tested several shapes, including cube, cylindrical, pyramid, inverted pyramid, and winglet configurations, shown in Figure \ref{fig:vortex_generator_shapes}.
 
 \begin{figure}[ht]
     \centering
@@ -488,7 +488,7 @@ Schiffman's results and experimental setup laid the foundation for further inves
     \label{fig:vortex_generator_shapes}
 \end{figure}
 
-While winglet-shaped vortex generators reduced photovoltaic module temperature by $5^\circ \text{C}$ at $1\,m/s$, their free-convection based design meant that cooling effectiveness diminished at higher wind velocities. In contrast, cylindrical-shaped vortex generators demonstrated the most favourable trend, causing greater temperature reductions as the velocity increased. Thus, the cylindrical vortex generator was selected for further experimentation, focusing on spacing configurations to promote turbulent flow in the span-wise direction. \cite{Chaudhury2024TheConvection}
+While winglet-shaped vortex generators reduced photovoltaic module temperature by $5^\circ \text{C}$ at $1$ m/s, their free-convection based design meant that cooling effectiveness diminished at higher wind velocities. In contrast, cylindrical-shaped vortex generators demonstrated the most favourable trend, causing greater temperature reductions as the velocity increased. Thus, Chaudhury encouraged the selection of the cylindrical vortex generator for further experimentation, focusing on spacing configurations to promote turbulent flow in the span-wise direction. \cite{Chaudhury2024TheConvection}
 
 \subsubsubsection{Effect of Vortex Generator Spacing on Heat Transfer}
 Consequently, in 2024, Z. Zhao investigated the effects of span-wise, $d_x$, and stream-wise, $d_y$, spacing of cylindrical vortex generators on photovoltaic module temperature reduction. The spacing direction of the vortex generator array relative to the direction of airflow is shown in Figure \ref{fig:spacing_diagram}.
@@ -500,41 +500,38 @@ Consequently, in 2024, Z. Zhao investigated the effects of span-wise, $d_x$, and
     \label{fig:spacing_diagram}
 \end{figure}
 
-For the span-wise
+For the span-wise spacing group, Zhao tested five values of horizontal spacing, $d_x$ ($26$ mm, $51$ mm, $102$ mm, $153$ mm, and $204$ mm), while maintaining a constant stream-wise spacing, $d_y$, of $79$ mm. Each configuration was subjected to forced convection wind speeds of $1.3$ m/s, $2.3$ m/s, and $3.3$ m/s.\vspace{0.5em}
 
-Zhao tested different spacing cases for each array direction (span-wise and stream-wise) were assessed.\par
-Zhao's results
+Similarly, for the stream-wise spacing group, Zhao tested five values of vertical spacing, $d_y$ ($40$ mm, $79$ mm, $119$ mm, $158$ mm, and $198$ mm), with the span-wise spacing, $d_x$, fixed at $51$ mm. These configurations were subjected to forced convection wind speeds of $1$ m/s, $2$ m/s, and $3$ m/s.\vspace{0.5em}
 
+The results indicated that a span-wise spacing of $51$ mm under a wind speed of $3.3$ m/s produced the greatest temperature reduction among the span-wise configurations, achieving a decrease of $2.15^\circ\text{C}$. In the stream-wise group, a spacing of $79$ mm under a wind speed of $3$ m/s yielded the largest reduction, with a decrease of $2.51^\circ\text{C}$. \cite{Zhou2024SpacingConvection} \vspace{0.5em}
 
 \pagebreak
 \subsection{Experimental Techniques}
 \subsubsection{Infrared Thermography}
+Infrared thermography is a non-invasive technique that measures mid- to long-wave infrared radiation emitted by objects and translates it into spatially resolved temperature data. \cite{Tattersall2016InfraredPhysiology} This technique is crucial to this thesis as it allows for the monitoring of temperature reductions in photovoltaic modules resulting from the application of cooling methods.\vspace{0.5em}
+
+All bodies emit infrared radiation as a result of their temperature. The nature of this emission is governed by Planck’s law, which states that as the temperature of a body, \( T \), increases, the intensity of radiation emitted, \( E_{b\lambda} \), at all wavelengths also increases. This relation is expressed in Equation \ref{eq:plancks_law}. \cite{Cengel2014FundamentalsRadiation}
+
+\begin{equation}
+    E_{b\lambda}(\lambda,T)=\frac{C_1}{\lambda^5[\text{exp}(C_2/\lambda T)-1]}
+    \label{eq:plancks_law}
+\end{equation}
+
+Thermal imaging cameras capture the emitted radiation using an infrared detector. The infrared detector then converts the radiation into an electrical signal. The most common type of infrared detector is the microbolometer, consisting of a grid of tiny sensors that measure the infrared radiation from each pixel in the scene. Each sensor element changes its electrical resistance based on the amount of radiation it absorbs. The raw data is processed and transformed into a thermal image, which is displayed on a screen.\vspace{0.5em}
+
+A key advantage of infrared thermography is its non-contact nature which prevents any disturbance to the heat transfer process, ensuring that measurements remain accurate and reliable. This is particularly important in dynamic or sensitive environments where contact-based methods could alter the conditions being observed.\vspace{0.5em}
+
+Therefore, infrared thermography is a useful experimental technique that will play a key role in this thesis's investigation of cooling methods for photovoltaic modules. \cite{HistoryofSimpleThings2024HowWork}
+
 \subsubsection{Thermocouple Sensors}
+- What is a thermocouple?\par
+- How does a thermocouple work?\par
+- Why is a thermocouple a useful experimental technique to this thesis?\par
+
 \subsubsection{Particle Image Velocimetry}
 
 \subsection{Literature Gap}
-% \subsection{Energy Balance Maybe??? Depends on what we do for Charitha.}
+- This is almost a summary of the literature that lead up to the literature gap itself.\par
 
 \pagebreak
-
-
-% \subsubsection{Cooling through Forced Convection}
-% \begin{itemize}
-%     \item What is forced convection?
-%     \item How is forced convection used as a cooling method for photovoltaic modules?
-%     \begin{itemize}
-%         \item DC Fan Experiment
-%         \item Floating Photovoltaic Module Experiment
-%     \end{itemize}
-%     \item Are there drawbacks to forced convection as a cooling method for photovoltaic modules?
-%     \item Air vs Water Cooling Experiment
-%     \item Air Cooled Modified Photovoltaic Module Experiment
-%     \item Single Fin vs Multiple Fin Experiment
-% \end{itemize}
-
-% \subsubsection{Cooling through Vortex Generators}
-% \begin{itemize}
-%     \item What is a vortex generator?
-%     \item What is the purpose of vortex generators?
-%     \item Examples of Vortex Generator Experiments in the Context of Photovoltaic Module Cooling
-% \end{itemize}
