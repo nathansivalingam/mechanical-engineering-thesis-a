@@ -525,11 +525,27 @@ A key advantage of infrared thermography is its non-contact nature which prevent
 Therefore, infrared thermography is a useful experimental technique that will play a key role in this thesis's investigation of cooling methods for photovoltaic modules. \cite{HistoryofSimpleThings2024HowWork}
 
 \subsubsection{Thermocouple Sensors}
-- What is a thermocouple?\par
-- How does a thermocouple work?\par
-- Why is a thermocouple a useful experimental technique to this thesis?\par
+A thermocouple can be defined as a sensor used to measure temperature. In a thermocouple, two wires made from different metals are joined together at both ends. One of the ends is then heated, creating a continuous current that flows in the thermoelectric circuit. If the circuit is broken at the centre, the voltage across the open ends, known as the Seebeck voltage, can be measured. Since the voltage changes with temperature, the Seebeck voltage can be used to determine the temperature. \cite{OmegaEngineeringThermocouplesEngineering}\vspace{0.5em}
+
+Several types of thermocouples are available, each categorised by their specific temperature range. Among these, the K-type thermocouple is the most widely used, with a temperature range of $-200^\circ \text{C}$ to $1260^\circ \text{C}$. \cite{TheEngineeringMindset2020HowRTD} \vspace{0.5em}
+
+The broad temperature range of the K-type thermocouple enhances its versatility across a wide variety of applications. Furthermore, its relatively low-cost materials-nickel-chromium and nickel-aluminium-make it a more economical choice compared to other thermocouple types. Although the standard tolerance for a K-type thermocouple is $\pm2.2^\circ \text{C}$ within the temperature range of $0^\circ \text{C}$ to $200^\circ \text{C}$, it remains well-suited for general-purpose temperature measurements. \cite{ETWInternational2024KX2X7/0.2mm}\vspace{0.5em}
+
+Thus, the K-type thermocouple serves as an important experimental technique for measuring temperature reductions in photovoltaic modules.\vspace{0.5em} 
 
 \subsubsection{Particle Image Velocimetry}
+Particle Image Velocimetry (PIV) is an optical measurement technique where the velocity field of an entire region within the flow is measured simultaneously. \cite{Atkins2016VelocityPIV} Figure \ref{fig:piv_diagram} details a typical experimental set-up of a PIV system.\vspace{0.5em}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth, trim=0 0 0 5, clip]{Figures/piv_diagram.pdf}
+    \caption{Experimental arrangement for planar 2C-2D PIV in a wind tunnel. Adapted from \cite{Raffel2018ParticleEdition}}
+    \label{fig:piv_diagram}
+\end{figure}
+
+The process begins with the introduction of tracer particles into the flow, a procedure commonly referred to as seeding. These particles are then illuminated within a plane or volume of the flow at least twice, separated by a short and known time interval. During these illuminations, a high-speed camera captures the light scattered by the tracer particles. The captured images are divided into small regions, known as interrogation windows. Within each window, the displacement of the particle pattern between the first and second images is analysed using a cross-correlation algorithm. By calculating the particle displacement, the velocity vector at each point can be determined, resulting in a comprehensive velocity field. \cite{Raffel2018ParticleEdition}\vspace{0.5em}
+
+The use of PIV in investigating forced convection cooling methods for photovoltaic modules would be highly beneficial. PIV enables the visualisation of flow patterns, making it possible to identify stagnant regions where airflow is inadequate. This information can help optimise the experimental rig for better airflow performance. Furthermore, PIV reveals how objects within the wind tunnel, such as thermocouple probes and wind speed sensors, affect the flow patterns, offering insight into their effect on the photovoltaic system.
 
 \subsection{Literature Gap}
 - This is almost a summary of the literature that lead up to the literature gap itself.\par
