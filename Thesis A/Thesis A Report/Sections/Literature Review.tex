@@ -47,12 +47,12 @@ Both the n-type and p-type silicon layers undergo a process known as doping, whe
 When a proton strikes the silicon photovoltaic cell with the required energy, an electron is knocked out of its bond. Because of the electric field at the p-n junction, the negatively charged electron moves toward the n-side, while the resulting positively charged hole is attracted to the p-side. The free electrons are collected by thin metal fingers positioned at the top of the photovoltaic cell, before travelling through an external circuit. After electrical work is performed, the electrons are returned to the conductive aluminium sheet positioned at the back of the photovoltaic cell. Since electrons follow a continuous cycle and are the only moving components, there is no wear and tear, allowing photovoltaic cells to last for decades. \cite{TED-Ed2016HowKomp} However, they still have limitations.
 
 \subsection{Performance Limitations of Photovoltaic Modules}
-A major limitation of photovoltaic modules is their declining electrical efficiency, particularly at high temperatures. A review led by Swapnil Dubey of Nanyang Technological University found that standard photovoltaic modules typically convert 6-20\% of incoming solar radiation into electrical energy. The remaining 80-94\% is mostly converted into heat, increasing the module’s temperature and further lowering its efficiency. \cite{Dubey2013TemperatureReview}\vspace{0.5em}
+A major limitation of photovoltaic modules is their declining electrical efficiency, particularly at high temperatures.\vspace{0.5em}
+
+A review led by Swapnil Dubey of Nanyang Technological University found that standard photovoltaic modules typically convert 6-20\% of incoming solar radiation into electrical energy. The remaining 80-94\% is mostly converted into heat, increasing the module’s temperature and further lowering its efficiency. \cite{Dubey2013TemperatureReview}\vspace{0.5em}
 
 % An active cooling system for photovoltaic modules - H.G. Teo
-A 2010 study led by H.G. Teo from the National University of Singapore refined Dubey et al.'s electrical efficiency range to 8-14\%. In the study, Teo et al. focused on comparing the electrical efficiency of photovoltaic modules under cooling and non-cooling conditions.\vspace{0.5em}
-
-Teo et al. observed that the electrical efficiency of the photovoltaic module decreased as the temperature of the module increased, as shown in Figure \ref{fig:electrical_efficiency_vs_temperature_pv_module}. Teo et al. also found that without active cooling, the module temperature was significantly higher than when active cooling was applied under the same meteorological conditions. Thus, active cooling improved the module’s electrical efficiency from 8–9\% to 12–14\%. \cite{Teo2012AnModules}
+A 2010 study led by H.G. Teo from the National University of Singapore refined Dubey et al.'s electrical efficiency range to 8-14\%. In the study, Teo et al. focused on comparing the electrical efficiency of photovoltaic modules under cooling and non-cooling conditions. Teo et al. observed that the electrical efficiency of the photovoltaic module decreased as the temperature of the module increased, as shown in Figure \ref{fig:electrical_efficiency_vs_temperature_pv_module}. Teo et al. also found that without active cooling, the module temperature was significantly higher than when active cooling was applied under the same meteorological conditions. Thus, active cooling improved the module’s electrical efficiency from 8–9\% to 12–14\%. \cite{Teo2012AnModules}
 
 \begin{figure}[ht]
     \centering
@@ -75,29 +75,19 @@ To understand the proportional relationship between the band gap and the electri
     \label{eq:pv_cell_efficiency_function}
 \end{equation}
 
-The open circuit voltage, short circuit current and fill factor are all affected by the band gap. Therefore, an investigation into the effect of a reduced band gap on these aforementioned variables is necessary to evaluate the impact that the band gap has on the electrical efficiency of the photovoltaic module.\vspace{0.5em}
+The open circuit voltage, $V_\text{OC}$, short circuit current, $I_\text{SC}$, and fill factor, $FF$, are all affected by the band gap. Therefore, an investigation into the effect of a reduced band gap on these aforementioned variables is necessary to evaluate the impact that the band gap has on the electrical efficiency of the photovoltaic module.\vspace{0.5em}
 
 % Open circuit voltage
-A 1994 study led by P. Baruch from the University of Paris derived a formula for determining the minimum value of the diode saturation current, as shown in Equation \ref{eq:minimum_diode_saturation_current}.
+A 1994 study led by P. Baruch from the University of Paris derived a formula for determining the minimum value of the diode saturation current, as shown in Equation \ref{eq:minimum_diode_saturation_current}. \cite{Baruch1995OnConversion}
 
 \begin{equation}
-    J_0 = \frac{q}{k} \frac{15\sigma}{\pi^4} T^3 \int_{u}^{\infty} \frac{x^2}{e^x - 1}\,dx
+    J_0 = \frac{q}{k} \frac{15\sigma}{\pi^4} T^3 \int_{\frac{E_G}{kT}}^{\infty} \frac{x^2}{e^x - 1}\,dx
     \label{eq:minimum_diode_saturation_current}
 \end{equation}
 
-where $u = \frac{E_G}{kT}$. \cite{Baruch1995OnConversion} A casual inspection of Equation \ref{eq:minimum_diode_saturation_current} shows a relationship between the band gap energy and the diode saturation current. However, it is not immediately obvious what the nature of the relationship is due to the complexity of the integral function.\vspace{0.5em}
+A casual inspection of Equation \ref{eq:minimum_diode_saturation_current} reveals a relationship between the band gap energy, $E_G$, and the diode saturation current, $J_0$. However, it is not immediately obvious what the nature of the relationship is due to the complexity of the integral function.\vspace{0.5em}
 
-Just over a decade later, Michael Y. Levy and Christiana Honsberg from the University of Delaware proposed a method to evaluate the integral in Baruch's formula. \cite{Levy2006RapidApplications} Then, in 2017, Honsberg worked with Stuart Bowden to graph the relationship between the diode saturation current and the band gap based on this method, as shown in Figure \ref{fig:diode_saturation_current_bandgap_graph}.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figures/diode_saturation_current_bandgap_graph.png}
-    \caption{Diode saturation current as a function of band gap. The values are determined from detailed balance and place a limit on the open circuit voltage of a solar cell. \cite{HonsbergOpen-CircuitVoltage}}
-    \label{fig:diode_saturation_current_bandgap_graph}
-\end{figure}
-\FloatBarrier
-
-Honsberg and Bowden used the diode saturation current values, $J_0$, from Figure \ref{fig:diode_saturation_current_bandgap_graph}, denoted as $I_0$ in Equation \ref{eq:open_circuit_voltage_function}, to calculate the open-circuit voltage as a function of the band gap. The linearly proportional relationship between the band gap and the open-circuit voltage is shown in Figure \ref{fig:open-circuit_voltage_bandgap_graph}.
+Just over a decade later, Michael Y. Levy and Christiana Honsberg from the University of Delaware proposed a method to evaluate the integral in Baruch's formula. \cite{Levy2006RapidApplications} Then, in 2017, Honsberg worked with Stuart Bowden to graph the relationship between the diode saturation current and the band gap based on this method, as shown in Figure \ref{fig:bandgap_diode_sat_current_graph}. Honsberg and Bowden used the diode saturation current values, $J_0$, from Figure \ref{fig:bandgap_diode_sat_current_graph}, denoted as $I_0$ in Equation \ref{eq:open_circuit_voltage_function}, to calculate the open-circuit voltage, $V_\text{OC}$, as a function of the band gap. The linearly proportional relationship between the band gap and the open-circuit voltage is shown in Figure \ref{fig:open-circuit_voltage_bandgap_graph}.
 
 \begin{equation}
     V_{OC} = \frac{n k T}{q} \times \ln\left(\frac{I_L}{I_0} + 1\right)
@@ -106,15 +96,25 @@ Honsberg and Bowden used the diode saturation current values, $J_0$, from Figure
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.7\textwidth]{Figures/open-circuit_voltage_bandgap_graph.png}
-    \caption{$V_\text{OC}$ as a function of band gap for a cell with AM 0 and AM 1.5. The $V_\text{OC}$ increases with bang gap as the recombination current falls. There is drop off in $V_\text{OC}$ at very high band gaps due to the very low $I_\text{SC}$. \cite{HonsbergOpen-CircuitVoltage}}
-    \label{fig:open-circuit_voltage_bandgap_graph}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, height=6cm, trim=0 0 0 0, clip]{Figures/bandgap_diode_sat_current_graph}
+        \caption{Diode saturation current as a function of band gap. The values are determined from detailed balance and place a limit on the open-circuit voltage of a solar cell. \cite{HonsbergOpen-CircuitVoltage}}
+        \label{fig:bandgap_diode_sat_current_graph}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/open-circuit_voltage_bandgap_graph.png}
+        \caption{$V_\text{OC}$ as a function of band gap for a cell under AM 0 and AM 1.5 illumination. The $V_\text{OC}$ increases with band gap as the recombination current falls. \cite{HonsbergOpen-CircuitVoltage}}
+        \label{fig:open-circuit_voltage_bandgap_graph}
+    \end{minipage}
 \end{figure}
 \FloatBarrier
 
+
 Thus, the reduced band gap due to the increased temperature of the photovoltaic module leads to a decrease in the open-circuit voltage. \cite{HonsbergOpen-CircuitVoltage}\vspace{0.5em}
 
-\pagebreak
 % Short circuit current
 Honsberg and Bowden also graphed the relationship between the band gap and the short circuit current density, as shown in Figure \ref{fig:short_circuit_current_density_bandgap_graph}.
 
