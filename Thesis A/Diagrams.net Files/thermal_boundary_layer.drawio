@@ -310,10 +310,10 @@
         <mxCell id="BpvmpLQq6f-2YsPC9vpn-7" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Thermal&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 36px;&quot;&gt;boundary&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 36px;&quot;&gt;layer&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="690" y="510" width="140" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="BpvmpLQq6f-2YsPC9vpn-8" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;T&lt;sub&gt;s&lt;/sub&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="BpvmpLQq6f-2YsPC9vpn-8" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;T&lt;sub style=&quot;&quot;&gt;s&lt;/sub&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="630" y="645" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BpvmpLQq6f-2YsPC9vpn-10" value="&lt;span style=&quot;color: rgb(0, 29, 53); font-family: &amp;quot;Google Sans&amp;quot;, Arial, sans-serif; font-size: 27px; text-align: start;&quot;&gt;δ&lt;sub&gt;t&lt;/sub&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="BpvmpLQq6f-2YsPC9vpn-10" value="&lt;span style=&quot;color: rgb(0, 29, 53); font-family: &amp;quot;Google Sans&amp;quot;, Arial, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 36px;&quot;&gt;δ&lt;sub style=&quot;&quot;&gt;t&lt;/sub&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="270" y="600" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BpvmpLQq6f-2YsPC9vpn-11" value="" style="endArrow=none;html=1;rounded=0;curved=1;" parent="1" edge="1">
@@ -422,7 +422,7 @@
             <mxPoint x="40" y="652" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U74PGerzhOz4iTk-x-gG-2" value="&lt;font style=&quot;font-size: 27px;&quot;&gt;x&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="U74PGerzhOz4iTk-x-gG-2" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;x&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="123" y="648" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
